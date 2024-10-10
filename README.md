@@ -216,9 +216,11 @@ A digital ASIC design process requires :<br/>
 > cd Desktop/<br/>
 > cd work/<br/>
 > cd tools/<br/>
+> cd openlane_working_dir/<br/>
+> cd openlane/<br/>
 
 * We can also enter the comman as=>
-> cd Desktop/work/tools/<br/>
+> cd Desktop/work/tools/openlane_working_dir/openlane<br/>
 
 ### ls:
 * ls command line utility lists all the files and directories under a specified directory.
@@ -226,8 +228,10 @@ A digital ASIC design process requires :<br/>
 * Three such ways are 'ls', 'ls -l', 'ls -ltr'.
 * Below image will show difference in above commands.<br/><br/>
 ![VirtualBox_OpenLane_Ubuntu_Harshith_10_10_2024_20_43_33](https://github.com/user-attachments/assets/9f62260a-1b30-4b47-85b1-805a41aa9dc0)<br/><br/>
-* We can see that 'ls' only shows file names. 'ls -l' shows file names with dates in alphabetical order.'ls -ltr' shows file names with dates in order of date of creation.
-* 
+* We can see that 'ls' only shows file names. 'ls -l' shows file names with dates in alphabetical order.'ls -ltr' shows file names with dates in order of date of creation.<br/>
+
+**Note** : To know about a command, we can use => " command_name --help".<br/>
+
 
 
 
