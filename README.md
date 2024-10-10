@@ -82,6 +82,27 @@ This machine language can be understood by hardware and it implements the progra
 * Let us take stopwatch as an example.<br/><br/>
 ![Screenshot 2024-10-10 152109](https://github.com/user-attachments/assets/30c8b533-6143-4e11-a051-91e2f655350c)<br/><br/>
 
+### How hardware will be interfaced:
+* Hardware can only understand logic High or Low i.e. 0 or 1.<br/><br/>
+![Screenshot 2024-10-10 152501](https://github.com/user-attachments/assets/1b047cb9-7a70-49b1-940e-d8d695fa0088)<br/><br/>
+
+* Output of the assembly is a binary pattern.<br/><br/>
+![Screenshot 2024-10-10 152754](https://github.com/user-attachments/assets/e4671a8b-f513-4609-9da4-d05b874db71d)<br/><br/>
+
+* RTL understands the instructions and create a design.<br/><br/>
+![Screenshot 2024-10-10 152855](https://github.com/user-attachments/assets/8b8a27c7-6ab3-4e5e-b6ef-a24bf3dc5b14)<br/><br/>
+
+* RTL design will be synthesized into a netlist.<br/><br/>
+![Screenshot 2024-10-10 153027](https://github.com/user-attachments/assets/31b9cb7a-3a0c-4a8c-8af2-7a4858abb708)<br/><br/>
+
+* Hardware implementation of design happens through Physical Design.<br/><br/>
+![Screenshot 2024-10-10 153121](https://github.com/user-attachments/assets/dcd12357-cd47-46f4-bf68-5aead923b3ac)<br/><br/>
+
+
+
+
+
+
 
 
 
