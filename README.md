@@ -219,7 +219,7 @@ A digital ASIC design process requires :<br/>
 > cd openlane_working_dir/<br/>
 > cd openlane/<br/>
 
-* We can also enter the comman as=>
+* We can also enter the command as=>
 > cd Desktop/work/tools/openlane_working_dir/openlane<br/>
 
 ### ls:
@@ -232,6 +232,32 @@ A digital ASIC design process requires :<br/>
 
 **Note** : To know about a command, we can use => " command_name --help".<br/>
 
+### docker:
+* To run bash, we are going to use command docker.
+### pwd:
+* pwd means "present working directory".
+* It shows which directory we are working in.
+
+* After opening bash, we have to enter
+> ./flow.tcl -interactive
+* It is used to run OpenLANE in Interactive mode 
+* Now enter the below command
+> package require openlane 0.9
+
+### Design setup stage:
+* We have to setup the filesystem specific to the flow.
+* The location need to be setup for the flow to fetch.
+* It will be done by following command
+> prep -design picorv32a
+
+* The syntax is that " prep -design design_name".The command will output this below.<br/><br/>
+![OpenLANE](https://github.com/user-attachments/assets/73fd98a3-4f8d-4066-8549-39bcc03a1bda)<br/><br/>
+* In "picorv32a" directory in "designs" directory, we can see that "runs" file will be created.
+
+
+### Running Synthesis:
+* The command to run the synthesis is
+> run_synthesis
 
 
 
