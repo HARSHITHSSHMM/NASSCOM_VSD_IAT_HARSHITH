@@ -95,8 +95,36 @@ This machine language can be understood by hardware and it implements the progra
 * RTL design will be synthesized into a netlist.<br/><br/>
 ![Screenshot 2024-10-10 153027](https://github.com/user-attachments/assets/31b9cb7a-3a0c-4a8c-8af2-7a4858abb708)<br/><br/>
 
-* Hardware implementation of design happens through Physical Design.<br/><br/>
+* Hardware implementation of logic design happens through Physical Design.<br/><br/>
 ![Screenshot 2024-10-10 153121](https://github.com/user-attachments/assets/dcd12357-cd47-46f4-bf68-5aead923b3ac)<br/><br/>
+
+## SOC Design Using Openlane:
+A digital ASIC design process requires :<br/>
+-> RTL Designs.<br/>
+-> EDA tools.<br/>
+-> PDK Data.<br/><br/>
+![Screenshot 2024-10-10 153607](https://github.com/user-attachments/assets/cdadf75c-0d80-4479-82a6-c5622c1a6db0)<br/><br/>
+
+* Below image shows some open-source tools and websites for the design.<br/><br/>
+![Screenshot 2024-10-10 153823](https://github.com/user-attachments/assets/662ebdc6-f6f4-45ef-b0ff-34cd1508abf7)<br/><br/>
+
+* First, we should learn about these terms=><br/>
+-> RTL designs =><br/>
+  * RTL means Register Transfer Level.
+  * These are the designs programmed in RTL languages such as Verilog or VHDL.
+  * It gives us software implementation of the hardware.<br/>
+  
+-> EDA tools =><br/>
+  * EDA means Electronic Design Automation.
+  * EDA tools are used to design and validate the semiconductor manufacturing process to ensure it delivers the required performance and density.
+  * Used to design electronic systems in three key steps: simulation, design, and verification.
+  * EDA tools allow teams to predict circuit behavior, assemble circuit elements, and anticipate chip performance.<br/>
+
+-> PDK data =>
+  * PDK means Process Design Kit.
+  * PDK is a set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit.<br/>
+
+
 
 
 
