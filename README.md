@@ -267,6 +267,8 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Cells](https://github.com/user-attachments/assets/912cd433-819b-4eb5-9181-938c73c7e3e6)<br/><br/>
 ![dfx (3)](https://github.com/user-attachments/assets/05814de9-89c2-4a9c-ad15-55d1e786b2f5)<br/><br/>
 
+* From this, flop ratio will be => 1613/14876 = 0.1084296853993009
+* In percentage, it is equal to 10.84296853993009%
 
 
 
