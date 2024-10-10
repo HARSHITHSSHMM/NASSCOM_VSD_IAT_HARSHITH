@@ -208,6 +208,30 @@ A digital ASIC design process requires :<br/>
 -> Layout Versus Schematic (LVS) checking compares the extracted netlist from the layout to the original schematic netlist to determine if they match.<br/><br/>
 ![Screenshot 2024-10-10 194947](https://github.com/user-attachments/assets/cc33dd1a-c44f-4150-85c4-9cc01a23f1c2)<br/><br/>
 
+## Implementation on EDA tools:
+* Before going to the tools, we have to know some basic commands in Linux.
+### cd:
+* cd - Change Directory.
+* To go to our work directory =>
+> cd Desktop/<br/>
+> cd work/<br/>
+> cd tools/<br/>
+
+* We can also enter the comman as=>
+> cd Desktop/work/tools/<br/>
+
+### ls:
+* ls command line utility lists all the files and directories under a specified directory.
+* There are many ways we can use ls.
+* Three such ways are 'ls', 'ls -l', 'ls -ltr'.
+* Below image will show difference in above commands.<br/><br/>
+![VirtualBox_OpenLane_Ubuntu_Harshith_10_10_2024_20_43_33](https://github.com/user-attachments/assets/9f62260a-1b30-4b47-85b1-805a41aa9dc0)<br/><br/>
+* We can see that 'ls' only shows file names. 'ls -l' shows file names with dates in alphabetical order.'ls -ltr' shows file names with dates in order of date of creation.
+* 
+
+
+
+
 
 
 
