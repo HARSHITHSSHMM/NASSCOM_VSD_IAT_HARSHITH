@@ -39,5 +39,14 @@ From above image =><br/>
 
 ![Screenshot 2024-10-10 125319](https://github.com/user-attachments/assets/e80aaa10-2c67-41ac-ac27-7f3e44e07bfc)<br/><br/>
 
+### Foundry IPs:
+![Screenshot 2024-10-10 125556](https://github.com/user-attachments/assets/fa634a2b-73bc-4a63-ac3a-f8fd848c7b65)<br/><br/>
+
+* From above image, we can see some blocks that are mentioned as " Foundry IPs".<br/>
+* IP means " Intellectual Property ".
+* Foundry is the place where chips will be manufactured.Ex: TSMC,UMC etc.
+* 
+
+
 
 
