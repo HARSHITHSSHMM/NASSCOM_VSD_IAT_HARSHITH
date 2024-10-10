@@ -131,7 +131,7 @@ A digital ASIC design process requires :<br/>
 ## RTL to GDSII flow:
 ![Screenshot 2024-10-10 162205](https://github.com/user-attachments/assets/003a85da-5390-4f26-bf6c-1cc774da6e82)<br/><br/>
 ### 1.Synthesis:
-It is the conversion of rtl program to a gate level netlist.<br/><br/>
+-> It is the conversion of rtl program to a gate level netlist.<br/><br/>
 ![Screenshot 2024-10-10 162414](https://github.com/user-attachments/assets/737aa306-c5a7-4314-9451-14bd9a35116e)<br/><br/>
 ![Screenshot 2024-10-10 162513](https://github.com/user-attachments/assets/4cf1507d-dbb0-4720-8a9a-42b4376e37ee)<br/><br/>
 
@@ -141,6 +141,75 @@ It is the conversion of rtl program to a gate level netlist.<br/><br/>
 ![Screenshot 2024-10-10 162938](https://github.com/user-attachments/assets/c05be72a-e893-45f8-bfa9-92bdecaec335)<br/><br/>
 ![Screenshot 2024-10-10 163001](https://github.com/user-attachments/assets/d11d9217-d80f-4c30-b894-3d3ec0383a63)<br/><br/>
 ![Screenshot 2024-10-10 163017](https://github.com/user-attachments/assets/fd53bef4-1c68-4993-9850-1c82eb388eca)<br/><br/>
+
+### 3.Placement:
+-> Placement is the process of placing the standard cells inside the core boundary in an optimal location.<br/>
+-> There are two types of placements: Global and Detailed.<br/>
+-> Global placement assigns general locations to movable objects, while detailed placement refines object locations to legal cell sites and enforces nonoverlapping constraints.<br/><br/>
+![Screenshot 2024-10-10 163318](https://github.com/user-attachments/assets/6d04055f-22d9-48c1-ba1c-b4bbde14f32e)<br/><br/>
+
+![Screenshot 2024-10-10 163353](https://github.com/user-attachments/assets/0a77f6e4-c21a-4233-88aa-9e851a590a1e)<br/><br/>
+
+### 4.Clock Tree Synthesis(CTS):
+-> Clock Tree Synthesis is a technique for distributing the clock equally among all sequential parts of a VLSI design.<br/><br/>
+![Screenshot 2024-10-10 163735](https://github.com/user-attachments/assets/703cb0e0-2cfb-4e26-807a-0e759d630660)<br/><br/>
+![Clock-network-topologies-A-Two-level-Y-Tree-B-Two-level-H-Tree-C-Two-level](https://github.com/user-attachments/assets/ed103222-4f21-4012-9e25-baf4b948237d)<br/><br/>
+
+### 5.Routing:
+->  Routing in the VLSI design course is making physical connections between signal pins using metal layers.<br/>
+-> There are two types in routing : Global and Detailed.
+![Screenshot 2024-10-10 164025](https://github.com/user-attachments/assets/4fa5b6b5-4e9f-43d5-b023-bb2d4634f571)<br/><br/>
+![Screenshot 2024-10-10 164116](https://github.com/user-attachments/assets/93bb80d3-6f86-4ab2-857b-7f99b1fcf94c)<br/><br/>
+
+### 6.Signoff:
+-> Signoff is the process of verifying the design at final stage before going to the tape out.<br/><br/>
+![Screenshot 2024-10-10 164302](https://github.com/user-attachments/assets/75b171ad-80bc-4ef1-a907-9f482756d38c)<br/><br/>
+
+## Introduction to OpenLANE:
+![Screenshot 2024-10-10 165611](https://github.com/user-attachments/assets/c3daca62-1d27-42bc-ae98-9b9ba281d6d4)<br/><br/>
+-> OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. The flow performs all ASIC implementation steps from RTL all the way down to GDSII.<br/><br/>
+![Screenshot 2024-10-10 170433](https://github.com/user-attachments/assets/072db17e-9930-454d-9b4e-769be5e70143)<br/><br/>
+
+### striVe SOC Family:
+![Screenshot 2024-10-10 165840](https://github.com/user-attachments/assets/92a42190-72f9-4289-ad95-8d1f991560b7)<br/><br/>
+
+### OpenLANE ASIC Flow:
+![Screenshot 2024-10-10 170005](https://github.com/user-attachments/assets/8e6fde2e-9916-41dc-b6de-c023cbf6cdba)<br/><br/>
+![Screenshot 2024-10-10 170031](https://github.com/user-attachments/assets/62e5a91c-ca33-45ff-ba3a-4a93b9182794)<br/><br/>
+-> There are two modes of operation: Autonomous or Interactive<br/>
+-> Design Space Configuration is used to find the best set of flow configurations.<br/><br/>
+![Screenshot 2024-10-10 170327](https://github.com/user-attachments/assets/1877c90d-2e0a-4754-91d1-61202595b3ed)<br/><br/>
+![Screenshot 2024-10-10 170407](https://github.com/user-attachments/assets/6918747d-ff04-4ca0-bf46-6d333efd53be)<br/><br/>
+
+### DFT(Design For Testability):
+-> We use " Fault " tool for DFT.<br/><br/>
+![Screenshot 2024-10-10 170655](https://github.com/user-attachments/assets/d3637478-1ee3-487f-ad7b-42e0a007e2a1)<br/><br/>
+
+### Physical Implementation:
+-> We use " OpenROAD " for Physical Implementation.<br/><br/>
+![Screenshot 2024-10-10 170824](https://github.com/user-attachments/assets/c23d1ffb-011d-406c-9f2c-943b14772794)<br/><br/>
+
+### Logic Equivalence Checking(LEC):
+-> We use Yosys for LEC.<br/><br/>
+![Screenshot 2024-10-10 170948](https://github.com/user-attachments/assets/c97fb2a4-67f5-4f34-ac7c-963fb42b0a07)<br/><br/>
+
+### Antenna Rules Violation:
+![Uploading Screenshot 2024-10-10 171101.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
