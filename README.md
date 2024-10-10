@@ -265,7 +265,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * Total No. of cells are shown as "Number of cells".
 * See the below image for clarification.<br/><br/>
 ![Cells](https://github.com/user-attachments/assets/912cd433-819b-4eb5-9181-938c73c7e3e6)<br/><br/>
-![dfx](https://github.com/user-attachments/assets/77c64dfb-7a9d-4c04-af28-34aa5084555d)<br/><br/>
+![dfx (3)](https://github.com/user-attachments/assets/05814de9-89c2-4a9c-ad15-55d1e786b2f5)<br/><br/>
 
 
 
