@@ -106,24 +106,48 @@ A digital ASIC design process requires :<br/>
 ![Screenshot 2024-10-10 153607](https://github.com/user-attachments/assets/cdadf75c-0d80-4479-82a6-c5622c1a6db0)<br/><br/>
 
 * Below image shows some open-source tools and websites for the design.<br/><br/>
-![Screenshot 2024-10-10 153823](https://github.com/user-attachments/assets/662ebdc6-f6f4-45ef-b0ff-34cd1508abf7)<br/><br/>
+![Screenshot 2024-10-10 161738](https://github.com/user-attachments/assets/dc2cd49d-e8fb-469c-b9a4-8d3a1e11d4df)<br/><br/>
 
 * First, we should learn about these terms=><br/>
 
 -> RTL designs =><br/>
-  * RTL means Register Transfer Level.
+  * RTL means " Register Transfer Level ".
   * These are the designs programmed in RTL languages such as Verilog or VHDL.
   * It gives us software implementation of the hardware.<br/>
   
 -> EDA tools =><br/>
-  * EDA means Electronic Design Automation.
+  * EDA means " Electronic Design Automation ".
   * EDA tools are used to design and validate the semiconductor manufacturing process to ensure it delivers the required performance and density.
   * Used to design electronic systems in three key steps: simulation, design, and verification.
-  * EDA tools allow teams to predict circuit behavior, assemble circuit elements, and anticipate chip performance.<br/>
+  * EDA tools allow teams to predict circuit behavior, assemble circuit elements, and anticipate chip performance.
+  * Below are some EDA tools and processes in physical design.<br/><br/>
+  ![Screenshot 2024-10-10 161942](https://github.com/user-attachments/assets/11e13109-ed9d-4fb4-9178-55522a3f2372)<br/><br/>
+
 
 -> PDK data =>
-  * PDK means Process Design Kit.
+  * PDK means " Process Design Kit ".
   * PDK is a set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit.<br/>
+
+## RTL to GDSII flow:
+![Screenshot 2024-10-10 162205](https://github.com/user-attachments/assets/003a85da-5390-4f26-bf6c-1cc774da6e82)<br/><br/>
+### 1.Synthesis:
+It is the conversion of rtl program to a gate level netlist.<br/><br/>
+![Screenshot 2024-10-10 162414](https://github.com/user-attachments/assets/737aa306-c5a7-4314-9451-14bd9a35116e)<br/><br/>
+![Screenshot 2024-10-10 162513](https://github.com/user-attachments/assets/4cf1507d-dbb0-4720-8a9a-42b4376e37ee)<br/><br/>
+
+### 2.Floor Planning and Power Planning:
+-> Floor Planning is the process of allocating the area for different macros and cells on a die.<br/>
+-> Power Planning is the process of providing power to macros and cells on a die.<br/><br/>
+![Screenshot 2024-10-10 162938](https://github.com/user-attachments/assets/c05be72a-e893-45f8-bfa9-92bdecaec335)<br/><br/>
+![Screenshot 2024-10-10 163001](https://github.com/user-attachments/assets/d11d9217-d80f-4c30-b894-3d3ec0383a63)<br/><br/>
+![Screenshot 2024-10-10 163017](https://github.com/user-attachments/assets/fd53bef4-1c68-4993-9850-1c82eb388eca)<br/><br/>
+
+
+
+
+
+
+
 
 
 
