@@ -23,3 +23,21 @@ From above image =><br/>
 -> QFP : Quad Flat Package<br/>
 -> SOP : Small-outline Package<br/>
 -> SOT : small outline transistor<br/>
+
+* The Ic will be sitting at the centre of the package(chip) and the chip is "Wire Bound" as shown in the below image.<br/><br/>
+![Screenshot 2024-10-10 124137](https://github.com/user-attachments/assets/5401f254-1b6a-48a4-a9c1-49011c27a1a6)<br/><br/>
+
+* Now, we are going to see inside the chip.<br/><br/>
+![Screenshot 2024-10-10 124501](https://github.com/user-attachments/assets/dcf2f028-71ce-4125-9170-44b6c8b238d4)<br/><br/>
+
+* As shown in the image,we can see 'pads', 'core' , 'die'.
+-> PADS : These are used to complete interconnections between different chips or chip and the board.<br/>
+-> Core : It is the area where the design exist.<br/>
+-> Die  : It is the silicon wafer piece on which IC was fabricated.<br/>
+
+* Below is an example of the chip we are discussing.<br/><br/>
+
+![Screenshot 2024-10-10 125319](https://github.com/user-attachments/assets/e80aaa10-2c67-41ac-ac27-7f3e44e07bfc)<br/><br/>
+
+
+
