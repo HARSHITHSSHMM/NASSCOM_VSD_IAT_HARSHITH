@@ -45,7 +45,23 @@ From above image =><br/>
 * From above image, we can see some blocks that are mentioned as " Foundry IPs".<br/>
 * IP means " Intellectual Property ".
 * Foundry is the place where chips will be manufactured.Ex: TSMC,UMC etc.
-* 
+* These IPs are foundry specific.
+* Below image shows Macros.<br/><br/>
+
+![Screenshot 2024-10-10 140714](https://github.com/user-attachments/assets/1ef47e24-bc28-4d2a-8c9d-35c2da38d38c)<br/><br/>
+
+### Macros:
+* Macros are small program or codes which can be reused.<br/><br/>
+
+## Introduction to RISC-V ISA(Instruction Set Architecture):
+*  An Instruction Set Architecture (ISA) is part of the abstract model of a computer that defines how the CPU is controlled by the software.
+*  An ISA may be classified in a number of different ways.
+*  A common classification is by architectural complexity.
+*  A complex instruction set computer (CISC) has many specialized instructions, some of which may only be rarely used in practical programs.
+*  A reduced instruction set computer (RISC) simplifies the processor by efficiently implementing only the instructions that are frequently used in programs, while the less common operations are implemented as subroutines, having their resulting additional processor execution time offset by infrequent use.
+*  Mainly, an ISA is used to convey instructions to the hardware to implement a program.
+
+
 
 
 
