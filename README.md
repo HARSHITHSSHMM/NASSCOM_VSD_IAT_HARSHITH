@@ -109,6 +109,7 @@ A digital ASIC design process requires :<br/>
 ![Screenshot 2024-10-10 153823](https://github.com/user-attachments/assets/662ebdc6-f6f4-45ef-b0ff-34cd1508abf7)<br/><br/>
 
 * First, we should learn about these terms=><br/>
+
 -> RTL designs =><br/>
   * RTL means Register Transfer Level.
   * These are the designs programmed in RTL languages such as Verilog or VHDL.
