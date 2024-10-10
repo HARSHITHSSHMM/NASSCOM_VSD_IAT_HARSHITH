@@ -60,6 +60,24 @@ From above image =><br/>
 *  A complex instruction set computer (CISC) has many specialized instructions, some of which may only be rarely used in practical programs.
 *  A reduced instruction set computer (RISC) simplifies the processor by efficiently implementing only the instructions that are frequently used in programs, while the less common operations are implemented as subroutines, having their resulting additional processor execution time offset by infrequent use.
 *  Mainly, an ISA is used to convey instructions to the hardware to implement a program.
+*  Below images gives an example.<br/><br/>
+![Screenshot 2024-10-10 141206](https://github.com/user-attachments/assets/2170043d-2bbd-40c0-8aaa-052250643550)<br/><br/>
+![Screenshot 2024-10-10 141842](https://github.com/user-attachments/assets/3e20fb0e-b4a8-4eac-b9e5-89e914664df7)<br/><br/>
+### Step-1:
+We have written a c-program in an IDE.
+### Step-2:
+The compiler will turn the c-program into Assembly language Code.
+Here it is RISC-V ISA.
+This contains instructions written in binary or hexadecimal.
+### Step-3:
+This Assembly language code will be converted to machine code using assembler.
+This machine language can be understood by hardware and it implements the program.<br/><br/>
+![Screenshot 2024-10-10 142458](https://github.com/user-attachments/assets/3a8fc4ee-5859-4e0c-81e5-e765e8df1946)<br/><br/>
+
+
+
+
+
 
 
 
