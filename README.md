@@ -8,7 +8,7 @@ Below is an image of an arduino board.<br/><br/>
 ![Screenshot 2024-10-10 122229](https://github.com/user-attachments/assets/fb50b3b5-ecc1-4e72-9815-4954224816d5)<br/><br/>
 
 * The chip which was marked in yellow circle is the processor/SOC. Other are peripherals.<br/>
-* But the misconception is that we consider whole chip as IC. But it a 'package' and it looks as it is shown below. <br/><br/>
+* But the misconception is that we consider whole chip as IC. But it is a 'package' and it looks as it is shown below. <br/><br/>
 
 ![Screenshot 2024-10-10 123227](https://github.com/user-attachments/assets/5a0deb51-b3c2-4fb2-8c72-ed6a516171ba)<br/><br/>
 
@@ -19,6 +19,7 @@ Below is an image of an arduino board.<br/><br/>
 From above image =><br/>
 -> BGA : Ball Grid Array<br/>
 -> DIP : Dual Inline Package<br/>
--> QFN : Quad Flat No-Lead Package
--> QFP : Quad Flat Pack
-
+-> QFN : Quad Flat No-Lead Package<br/>
+-> QFP : Quad Flat Package<br/>
+-> SOP : Small-outline Package<br/>
+-> SOT : small outline transistor<br/>
