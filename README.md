@@ -30,7 +30,7 @@ From above image =><br/>
 * Now, we are going to see inside the chip.<br/><br/>
 ![Screenshot 2024-10-10 124501](https://github.com/user-attachments/assets/dcf2f028-71ce-4125-9170-44b6c8b238d4)<br/><br/>
 
-* As shown in the image,we can see 'pads', 'core' , 'die'.
+* As shown in the image,we can see 'pads', 'core' , 'die'.<br/>
 -> PADS : These are used to complete interconnections between different chips or chip and the board.<br/>
 -> Core : It is the area where the design exist.<br/>
 -> Die  : It is the silicon wafer piece on which IC was fabricated.<br/>
@@ -55,6 +55,7 @@ From above image =><br/>
 
 ## Introduction to RISC-V ISA(Instruction Set Architecture):
 *  An Instruction Set Architecture (ISA) is part of the abstract model of a computer that defines how the CPU is controlled by the software.
+*  An ISA is an 'Abstract Interface' and called as " Architecture of computer'.
 *  An ISA may be classified in a number of different ways.
 *  A common classification is by architectural complexity.
 *  A complex instruction set computer (CISC) has many specialized instructions, some of which may only be rarely used in practical programs.
@@ -73,6 +74,14 @@ This contains instructions written in binary or hexadecimal.
 This Assembly language code will be converted to machine code using assembler.
 This machine language can be understood by hardware and it implements the program.<br/><br/>
 ![Screenshot 2024-10-10 142458](https://github.com/user-attachments/assets/3a8fc4ee-5859-4e0c-81e5-e765e8df1946)<br/><br/>
+
+* Below image shows the flow of the process which was explained above.<br/><br/>
+
+![Screenshot 2024-10-10 151847](https://github.com/user-attachments/assets/19965245-ddf3-49f6-bfbf-da315d4bb829)<br/><br/>
+
+* Let us take stopwatch as an example.<br/><br/>
+![Screenshot 2024-10-10 152109](https://github.com/user-attachments/assets/30c8b533-6143-4e11-a051-91e2f655350c)<br/><br/>
+
 
 
 
