@@ -204,7 +204,11 @@ A digital ASIC design process requires :<br/>
 ![Screenshot 2024-10-10 194700](https://github.com/user-attachments/assets/9185573b-1595-4626-ad1a-d331b8532432)<br/><br/>
 
 ### Physical Verification DRC & LVS:
+-> Design Rule Checking (DRC) verifies as to whether a specific design meets the constraints imposed by the process technology to be used for its manufacturing.<br/>
+-> Layout Versus Schematic (LVS) checking compares the extracted netlist from the layout to the original schematic netlist to determine if they match.<br/><br/>
 ![Screenshot 2024-10-10 194947](https://github.com/user-attachments/assets/cc33dd1a-c44f-4150-85c4-9cc01a23f1c2)<br/><br/>
+
+
 
 
 
