@@ -194,7 +194,22 @@ A digital ASIC design process requires :<br/>
 ![Screenshot 2024-10-10 170948](https://github.com/user-attachments/assets/c97fb2a4-67f5-4f34-ac7c-963fb42b0a07)<br/><br/>
 
 ### Antenna Rules Violation:
-![Uploading Screenshot 2024-10-10 171101.png…]()
+![Screenshot 2024-10-10 171101](https://github.com/user-attachments/assets/60d8bd29-62dd-40a2-933c-3a50c18fe507)<br/><br/>
+![Screenshot 2024-10-10 194534](https://github.com/user-attachments/assets/fdcc81b9-7cde-43f4-8dd5-b285c55a19c4)<br/><br/>
+![Screenshot 2024-10-10 194619](https://github.com/user-attachments/assets/683a4f9a-462c-4a92-bb5f-5bbfa87e6562)<br/><br/>
+
+### Static Timing Analysis:
+-> Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations.<br/>
+-> OpenSTA is used for Static timing analysis.<br/><br/>
+![Screenshot 2024-10-10 194700](https://github.com/user-attachments/assets/9185573b-1595-4626-ad1a-d331b8532432)<br/><br/>
+
+### Physical Verification DRC & LVS:
+![Screenshot 2024-10-10 194947](https://github.com/user-attachments/assets/cc33dd1a-c44f-4150-85c4-9cc01a23f1c2)<br/><br/>
+
+
+
+
+
 
 
 
