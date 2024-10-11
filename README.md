@@ -301,7 +301,33 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * We are going to consider each block as a black box.
 * These single blocks will be separately created as IPs or modules and later will be instantiated in top module.
 * It makes the blocks to be reused wherever they are required.
-* 
+* Below is the image of some of the IPs.<br/><br/>
+![Screenshot 2024-10-11 160132](https://github.com/user-attachments/assets/658a6d29-a556-47ca-84e2-b4c38251b6ba)<br/><br/>
+* Below  is the picture of  preplaced cells.<br/><br/>
+![Screenshot 2024-10-11 160506](https://github.com/user-attachments/assets/6c457b26-4ff5-4ebc-88b6-5cd38a0465a1)<br/><br/>
+* They will be placed according to inputs and outputs.
+* The position can't be changed.
+* The height can't be changed for every cell but there each cell can have different widths.
+
+## 3. Surrounding pre-placed cells with decoupling capacitors:
+* As we considered before that there exists parasitic elements between cells, primarily the capacitance will be formed betwen interconnects,cells and other elements.
+* So, we need to decouple the capacitor so that there will be no fringing fields and keep the signal integrity.
+* Let us take below example.<br/><br/>
+![Screenshot 2024-10-11 161122](https://github.com/user-attachments/assets/9e7dbc36-8bbd-40ca-be30-caf23b10208e)<br/><br/>
+* There exists resistance and inductance due to length of the wire offers some impedance.
+* There exists capacitance if there are crosstalks or if interconnects are near the substrate.
+* MOS Capacitance exists in MOSFETs.
+* These will cause power dissipation,delay and loss in signal integrity.<br/><br/>
+![Screenshot 2024-10-11 161649](https://github.com/user-attachments/assets/f2c7e4b7-3600-4af9-a05d-0c52f8bb37b1)<br/><br/>
+![Screenshot 2024-10-11 161759](https://github.com/user-attachments/assets/f6d7181d-310c-4409-afbd-a8772d5607d1)<br/><br/>
+* Noise margin is an important factor which desides low voltage or high voltage.
+* High noise margin is necessary.<br/><br/>
+![Logic Level](https://github.com/user-attachments/assets/49fd4870-59bb-4398-bdc9-b38d6707f19c)<br/><br/>
+
+
+
+
+
 
 
 
