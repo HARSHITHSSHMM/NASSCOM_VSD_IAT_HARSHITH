@@ -300,6 +300,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 153839](https://github.com/user-attachments/assets/cc4aa85b-2fe8-4b7a-91bb-5d4bb3d66a43)<br/><br/>
 * We are going to consider each block as a black box.
 * These single blocks will be separately created as IPs or modules and later will be instantiated in top module.
+* It makes the blocks to be reused wherever they are required.
 * 
 
 
