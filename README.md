@@ -366,6 +366,22 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * If not programmed or trained correctly, automated tools may place the cells out of core area which is not a best thing.<br/><br/>
 ![Screenshot 2024-10-11 172826](https://github.com/user-attachments/assets/a541b621-c7d8-4241-bbba-cc518d89ade1)<br/><br/>
 
+## Implementation of floorplan:
+* Before running floorplan, we have run these steps.
+> cd Desktop/work/tools/openlane_working_dir/openlane<br/>
+> docker<br/>
+> ./flow.tcl -interactive<br/>
+> prep -design picorv32a<br/>
+> run_synthesis<br/>
+
+* After all these steps,now run the floor plan
+> run_floorplan<br/>
+
+* Below are the screenshots of starting and completion of floorplan.<br/><br/>
+![run_floorplan](https://github.com/user-attachments/assets/191dfe43-6b12-47cc-be1e-44f25f5b7d07)<br/><br/>
+![fp_success](https://github.com/user-attachments/assets/dfc032d7-db51-429e-bbc1-9fff85beb141)<br/><br/>
+
+
 
 
 
