@@ -321,7 +321,8 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 161649](https://github.com/user-attachments/assets/f2c7e4b7-3600-4af9-a05d-0c52f8bb37b1)<br/><br/>
 ![Screenshot 2024-10-11 161759](https://github.com/user-attachments/assets/f6d7181d-310c-4409-afbd-a8772d5607d1)<br/><br/>
 * Noise margin is an important factor which desides low voltage or high voltage.
-* High noise margin is necessary.<br/><br/>
+* undefined zone is where the ouput is considerd "unknown".
+* So, high noise margin is necessary.<br/><br/>
 ![Logic Level](https://github.com/user-attachments/assets/49fd4870-59bb-4398-bdc9-b38d6707f19c)<br/><br/>
 
 
