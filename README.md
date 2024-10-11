@@ -272,7 +272,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 
 
 # Section - 2 : Good Floorplan vs Bad floorplan and Introduction to library cells
-## defining Width and Height of core and die
+## 1. Defining Width and Height of core and die
 ### Utilization factor and aspect ratio:
 * Utilization factor is the ratio of area occupied by the netlist to the total area of the core.
 * Aspect ratio is the ratio of height to width of a cell.
@@ -289,6 +289,22 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 151609](https://github.com/user-attachments/assets/0561a027-610e-43ae-accb-fca2f96e6238)<br/><br/>
 
 * Practically, utilization factor can't be 1. It is because there are many limititations to the design and many parasitic elements will be produced if the cells are side by side.And we disregarded interconnects,vias etc. in these images.
+* Optimally, we take larger areas as shown below.<br/><br/>
+![Screenshot 2024-10-11 152817](https://github.com/user-attachments/assets/fc5e5761-295d-4c45-9f56-17f69e78b42a)<br/><br/>
+
+## 2.Define locations of preplaced cells:
+![Screenshot 2024-10-11 153403](https://github.com/user-attachments/assets/7d262c43-c307-49c4-937a-aec7a5fe6d5f)<br/><br/>
+* As the above image shows, we fist partition the who combination logic into pieces ( such as AOI or OAI logic ) and assign them in blocks such that the output of one block will be inputs to another block without changing functionality.
+* Each  block will run separately.<br/><br/>
+![Screenshot 2024-10-11 153703](https://github.com/user-attachments/assets/393a6959-12c9-449d-af4f-e29c6a0dda3f)<br/><br/>
+![Screenshot 2024-10-11 153839](https://github.com/user-attachments/assets/cc4aa85b-2fe8-4b7a-91bb-5d4bb3d66a43)<br/><br/>
+* We are going to consider each block as a black box.
+* These single blocks will be separately created as IPs or modules and later will be instantiated in top module.
+* 
+
+
+
+
 
 
 
