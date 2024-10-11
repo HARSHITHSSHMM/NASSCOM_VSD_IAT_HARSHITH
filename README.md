@@ -325,6 +325,43 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * So, high noise margin is necessary.<br/><br/>
 ![Logic Level](https://github.com/user-attachments/assets/49fd4870-59bb-4398-bdc9-b38d6707f19c)<br/><br/>
 * Now, we are going to add a decoupling capacitor. The voltage across this decoupling capacitor will be same as voltage supplied or slightly lower.<br/><br/>
+![Screenshot 2024-10-11 162449](https://github.com/user-attachments/assets/9c2e67ce-0469-4efe-80d0-fc240be28328)<br/><br/>
+* The decoupling capacitor works according to the switching activity.
+* If there is high switching activity, capacitor loses some charge and in low switching, capacitor replenishes the charge.<br/><br/>
+![Screenshot 2024-10-11 164127](https://github.com/user-attachments/assets/e1bfb421-f937-4aeb-b687-f3bb6a2e5da7)<br/><br/>
+* Decaps are decoupling capacitors from the image.
+
+### 4.Powwer planning:
+![Screenshot 2024-10-11 164447](https://github.com/user-attachments/assets/972f887d-08eb-490a-acb6-f5052a5caf4c)<br/><br/>
+![Screenshot 2024-10-11 164749](https://github.com/user-attachments/assets/68f98592-8173-45a5-a973-2ce4a58d0742)<br/><br/>
+
+* we can see in the image that blue line is a 16-bit wide bus and we are driving a signal from one cell to other (indicated by red line).
+* Problem is with the signal integrity.
+* We can't assure that the signal driven from one cell will reach other cell as same.
+* This is a major factor affecting Digital Communication
+* There might be losses or noises added or value changes.<br/><br/>
+![Screenshot 2024-10-11 165014](https://github.com/user-attachments/assets/b867dd29-421b-4c61-8999-1045ecb201d3)<br/><br/>
+* From above image, we can see that if capacitors are discharging at the same time, there will be ground bounce which causes values to go into unknown state. (due to noise margin).<br/><br/>
+![Screenshot 2024-10-11 165324](https://github.com/user-attachments/assets/ac7db461-30ba-4c34-b84f-97d74fea5cda)<br/><br/>
+* In this image, if all the capcitors which are not charged before going to charge at the same time, there will be drop in voltage.
+* To solve these kinds of problems, we need to provide different levels of voltages or provide voltage in different geometries!.<br/><br/>
+![Screenshot 2024-10-11 170837](https://github.com/user-attachments/assets/a8a83a2d-bc03-485a-8807-0fd7602f8bdc)<br/><br/>
+[Screenshot 2024-10-11 171029](https://github.com/user-attachments/assets/f62dc25e-65ff-4342-bd7e-69c679684ffc)<br/><br/>
+
+### 5.Pin Placement:
+* Lets take two designs as shown below.<br/><br/>
+![Screenshot 2024-10-11 171228](https://github.com/user-attachments/assets/e794facb-c70c-4811-aa0d-d0ebf302eed7)<br/><br/>
+![Screenshot 2024-10-11 171314](https://github.com/user-attachments/assets/778765e4-db79-49f1-8115-12b2fea3f9bb)<br/><br/>
+* By combining both the designs, it will look like this.<br/><br/>
+![Screenshot 2024-10-11 171346](https://github.com/user-attachments/assets/e941b18d-ce7a-425d-bc07-e5fc7db13b56)<br/><br/>
+* We an see that we have some common ports in both designs.Lets reduce them.<br/><br/>
+![Screenshot 2024-10-11 171653](https://github.com/user-attachments/assets/fc881ae7-a0fb-4194-962f-57e4316368ce)<br/><br/>
+* We can observe from both images that we tied clk1 and clk2 in both designs and it will reduce additional sources.
+
+
+
+
+
 
 
 
