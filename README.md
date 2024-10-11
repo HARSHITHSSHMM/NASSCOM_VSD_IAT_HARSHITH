@@ -324,6 +324,8 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * undefined zone is where the ouput is considerd "unknown".
 * So, high noise margin is necessary.<br/><br/>
 ![Logic Level](https://github.com/user-attachments/assets/49fd4870-59bb-4398-bdc9-b38d6707f19c)<br/><br/>
+* Now, we are going to add a decoupling capacitor. The voltage across this decoupling capacitor will be same as voltage supplied or slightly lower.<br/><br/>
+
 
 
 
