@@ -271,6 +271,24 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * In percentage, it is equal to 10.84296853993009%
 
 
+# Section - 2 : Good Floorplan vs Bad floorplan and Introduction to library cells
+## defining Width and Height of core and die
+### Utilization factor and aspect ratio:
+* Utilization factor is the ratio of area occupied by the netlist to the total area of the core.
+* Aspect ratio is the ratio of height to width of a cell.
+**Note:** Don't be confused with MOSFET aspect ratio.<br/><br/>
+![Screenshot 2024-10-11 151632](https://github.com/user-attachments/assets/09bc7724-2808-43bd-bfb4-4ecd4404bb4a)<br/><br/>
+
+* let us consider all the cells shown in the above image have 1u. width and 1u. length each.
+* Generally it looks like below image.<br/><br/>
+![Screenshot 2024-10-11 152020](https://github.com/user-attachments/assets/cc80a5c0-02f1-447d-8a41-f2eadbd46ad9)<br/><br/>
+* We are considering every shape to be a square of area 1 sq.units.
+* So,the below images will show how we consider the area.<br/><br/>
+![Screenshot 2024-10-11 151503](https://github.com/user-attachments/assets/662ca37e-a0fd-4cf9-adb6-c5b435a85d5d)<br/><br/>
+![Screenshot 2024-10-11 151523](https://github.com/user-attachments/assets/4ee90733-56fe-4e42-896c-395623e41090)<br/><br/>
+![Screenshot 2024-10-11 151609](https://github.com/user-attachments/assets/0561a027-610e-43ae-accb-fca2f96e6238)<br/><br/>
+
+* Practically, utilization factor can't be 1. It is because there are many limititations to the design and many parasitic elements will be produced if the cells are side by side.And we disregarded interconnects,vias etc. in these images.
 
 
 
