@@ -3,7 +3,8 @@
 ### Packaging:
 Below is an image of an arduino board.<br/><br/>
 ![Screenshot 2024-10-10 122614](https://github.com/user-attachments/assets/44a378ae-8bf8-4f1a-8bb8-937bbf2bb149)<br/><br/>
-* We can see a chip was marked in yellow circle.Its block diagram is as shown below.<br/><br/>
+* We can see a chip was marked in yellow circle.Its block diagram i![Screenshot 2024-10-11 172214](https://github.com/user-attachments/assets/f120bdfa-0dc6-479a-8b43-42bdb00b54bc)
+s as shown below.<br/><br/>
 
 ![Screenshot 2024-10-10 122229](https://github.com/user-attachments/assets/fb50b3b5-ecc1-4e72-9815-4954224816d5)<br/><br/>
 
@@ -346,7 +347,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * In this image, if all the capcitors which are not charged before going to charge at the same time, there will be drop in voltage.
 * To solve these kinds of problems, we need to provide different levels of voltages or provide voltage in different geometries!.<br/><br/>
 ![Screenshot 2024-10-11 170837](https://github.com/user-attachments/assets/a8a83a2d-bc03-485a-8807-0fd7602f8bdc)<br/><br/>
-[Screenshot 2024-10-11 171029](https://github.com/user-attachments/assets/f62dc25e-65ff-4342-bd7e-69c679684ffc)<br/><br/>
+![Screenshot 2024-10-11 171029](https://github.com/user-attachments/assets/f62dc25e-65ff-4342-bd7e-69c679684ffc)<br/><br/>
 
 ### 5.Pin Placement:
 * Lets take two designs as shown below.<br/><br/>
