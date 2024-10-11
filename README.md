@@ -332,7 +332,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 164127](https://github.com/user-attachments/assets/e1bfb421-f937-4aeb-b687-f3bb6a2e5da7)<br/><br/>
 * Decaps are decoupling capacitors from the image.
 
-### 4.Powwer planning:
+## 4.Power planning:
 ![Screenshot 2024-10-11 164447](https://github.com/user-attachments/assets/972f887d-08eb-490a-acb6-f5052a5caf4c)<br/><br/>
 ![Screenshot 2024-10-11 164749](https://github.com/user-attachments/assets/68f98592-8173-45a5-a973-2ce4a58d0742)<br/><br/>
 
@@ -349,7 +349,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 170837](https://github.com/user-attachments/assets/a8a83a2d-bc03-485a-8807-0fd7602f8bdc)<br/><br/>
 ![Screenshot 2024-10-11 171029](https://github.com/user-attachments/assets/f62dc25e-65ff-4342-bd7e-69c679684ffc)<br/><br/>
 
-### 5.Pin Placement:
+## 5.Pin Placement:
 * Lets take two designs as shown below.<br/><br/>
 ![Screenshot 2024-10-11 171228](https://github.com/user-attachments/assets/e794facb-c70c-4811-aa0d-d0ebf302eed7)<br/><br/>
 ![Screenshot 2024-10-11 171314](https://github.com/user-attachments/assets/778765e4-db79-49f1-8115-12b2fea3f9bb)<br/><br/>
@@ -357,7 +357,15 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-11 171346](https://github.com/user-attachments/assets/e941b18d-ce7a-425d-bc07-e5fc7db13b56)<br/><br/>
 * We an see that we have some common ports in both designs.Lets reduce them.<br/><br/>
 ![Screenshot 2024-10-11 171653](https://github.com/user-attachments/assets/fc881ae7-a0fb-4194-962f-57e4316368ce)<br/><br/>
-* We can observe from both images that we tied clk1 and clk2 in both designs and it will reduce additional sources.
+* We can observe from both images that we tied clk1 and clk2 in both designs and it will reduce additional sources.<br/><br/>
+![Screenshot 2024-10-11 172214](https://github.com/user-attachments/assets/49d1e1c4-6ef2-438a-bae2-e34acb80e762)<br/><br/>
+* From this  image, we can see that clk1,clk2 and clkout have large pins than others because they are driving the signal to all cells and larger pins means less contact resistance.
+
+## 6. Logic cell Placement Blockage:
+* The pads location must not have any cells placed.
+* If not programmed or trained correctly, automated tools may place the cells out of core area which is not a best thing.<br/><br/>
+![Screenshot 2024-10-11 172826](https://github.com/user-attachments/assets/a541b621-c7d8-4241-bbba-cc518d89ade1)<br/><br/>
+
 
 
 
