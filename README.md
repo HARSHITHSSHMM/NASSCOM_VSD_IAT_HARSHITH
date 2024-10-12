@@ -392,8 +392,29 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
  ### 2.Placement:
  * We have place the particular netlist on the floorplan.<br/><br/>
  ![Screenshot 2024-10-12 082709](https://github.com/user-attachments/assets/ff706fce-e85d-4b2d-9760-eaed80b28ed0)<br/><br/>
+
+ ### 3.Placement Optimization:
  * Problem arises when there is too long of distance between two cells as in the case of green cells.Here we have to use wire length estimation.<br/><br/>
  ![Screenshot 2024-10-12 083016](https://github.com/user-attachments/assets/dd8297c0-c1ac-46c9-9995-5b565070f921)<br/><br/>
+ * First, we have to check which cells are distant to the input and output ports.
+ * There, we have to insert the repeaters which are ' buffers '.
+ * These buffers regenerate signal strength.
+ * After placing bufffers to all cells, it looks like this.<br/><br/>
+ ![Screenshot 2024-10-12 084242](https://github.com/user-attachments/assets/fd818594-5120-4698-8982-af4877081ad7)<br/><br/>
+ * Here timing becomes the major problem.
+
+## Library characterization and modelling:
+* Here, we will see the design flow.<br/><br/>
+![Screenshot 2024-10-12 084614](https://github.com/user-attachments/assets/cf21b4f9-510a-4578-bdb9-f60e939f9e49)<br/><br/>
+![Screenshot 2024-10-12 084625](https://github.com/user-attachments/assets/b192438d-d5f0-480c-9fea-df62371e30d9)<br/><br/>
+![Screenshot 2024-10-12 084637](https://github.com/user-attachments/assets/a99ad120-c5ef-46ff-a5a4-2c3f64c84c0c)<br/><br/>
+![Screenshot 2024-10-12 084658](https://github.com/user-attachments/assets/404ab247-23bc-4429-9303-abc70ecbfc85)<br/><br/>
+![Screenshot 2024-10-12 084718](https://github.com/user-attachments/assets/e9926763-bc1c-49d8-8ed7-1ffbe4fabedd)<br/><br/>
+![Screenshot 2024-10-12 084739](https://github.com/user-attachments/assets/732ea851-dd5b-49bd-bf59-8f1de54a0413)<br/><br/>
+* Static Timing Analysis is also known as Signoff Timing Analysis.
+
+
+
 
 
 
