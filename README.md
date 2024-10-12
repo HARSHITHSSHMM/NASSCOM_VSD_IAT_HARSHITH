@@ -439,16 +439,16 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * SPICE models are used for parameter equations.<br/><br/>
 ![Screenshot 2024-10-12 100620](https://github.com/user-attachments/assets/fe7e05c9-aa8e-4e63-bbdb-1269f8f9878f)<br/><br/>
 #### User-defined Specifiations:
-* Cell height and Cell width are user-defined.
+* Cell height and Cell width are user-defined.<br/>
 -> Height must be same for all the cells.<br/>
 -> Width can change to change the delay.<br/>
-* Suppy voltage is another user-defined parameter.
+* Suppy voltage is another user-defined parameter.<br/>
 -> The designer has to design the library cell such that those are within the noise margin levels.
-* Metal layers.
+* Metal layers.<br/>
 -> There are many metal layers and designer have to choose metal layer according to width, type and contacts.
-* Pin locations.
+* Pin locations.<br/>
 -> Change the location or direction of pins according to the requirement.
-* Drawn gate length.
+* Drawn gate length.<br/>
 -> To increase or decrease the size of polysilicon gate.<br/><br/>
   ![Screenshot 2024-10-12 100850](https://github.com/user-attachments/assets/e5c201f8-e329-403d-88c5-3d507a506432)<br/><br/>
 ![Screenshot 2024-10-12 101055](https://github.com/user-attachments/assets/5b89468a-41c7-48b8-97bd-0d4f1bbb267e)<br/><br/>
