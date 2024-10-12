@@ -467,6 +467,19 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * Below is the layout of the buffer formed by cascading two inverters(NOT gates).<br/><br/>
 ![Screenshot 2024-10-12 102556](https://github.com/user-attachments/assets/c7162b5d-525f-4d50-a991-f8dfcd9b529d)<br/><br/>
 ![Screenshot 2024-10-12 102705](https://github.com/user-attachments/assets/64faad64-f10c-4b39-a385-fb46ca912528)<br/><br/>
+* Below is the SPICE model of the circuit above. It contains circuit model, subcircuit models,technology models of PMOS and NMOS.<br/><br/>
+![Screenshot 2024-10-12 102939](https://github.com/user-attachments/assets/eadc0c80-6cdb-4344-8f6d-f592e7b80a48)<br/><br/>
+**Step-1**: We have to read the models and tech files of NMOS and PMOS.<br/>
+**Step-2**: We have to read extracted SPICE netlist.<br/>
+**Step-3**: Define how to recognize behaviour of the buffer.<br/>
+**Step-4**: Read sub-circuit of the inverter.<br/>
+**Step-5**: Attach necessary power sources.<br/>
+**Step-6**: Application of stimulus.<br/>
+**Step-7**: Apply necessarry output capacitances.<br/>
+**Step-8**: Provide necessary simulation command.<br/><br/>
+![Screenshot 2024-10-12 103808](https://github.com/user-attachments/assets/0449a81b-8364-45e2-ad77-ba361fd2fce5)<br/><br/>
+![Screenshot 2024-10-12 103918](https://github.com/user-attachments/assets/ae88ec05-4550-4abf-98a6-e0cd876980c6)<br/><br/>
+
 
 
 
