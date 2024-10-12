@@ -381,6 +381,20 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![run_floorplan](https://github.com/user-attachments/assets/191dfe43-6b12-47cc-be1e-44f25f5b7d07)<br/><br/>
 ![fp_success](https://github.com/user-attachments/assets/dfc032d7-db51-429e-bbc1-9fff85beb141)<br/><br/>
 
+## Library binding and placement:
+### 1.Binding netlist with phyical cells:
+* The design we considered above forms a library as shown below.<br/><br/>
+![Screenshot 2024-10-12 082123](https://github.com/user-attachments/assets/52471cab-a10b-4ec2-9255-8b2d3c480e83)<br/><br/>
+* This library consists the information of cells such as functionality, delay and look up tables.
+* The same library comes with different sizes to increase or decrease resistance and delay.Large size has less delay.<br/><br/>
+ ![Screenshot 2024-10-12 082419](https://github.com/user-attachments/assets/f6f5536e-7f02-4178-970c-fac3a7b59da1)<br/><br/>
+
+ ### 2.Placement:
+ * We have place the particular netlist on the floorplan.<br/><br/>
+ ![Screenshot 2024-10-12 082709](https://github.com/user-attachments/assets/ff706fce-e85d-4b2d-9760-eaed80b28ed0)<br/><br/>
+ * Problem arises when there is too long of distance between two cells as in the case of green cells.Here we have to use wire length estimation.<br/><br/>
+ ![Screenshot 2024-10-12 083016](https://github.com/user-attachments/assets/dd8297c0-c1ac-46c9-9995-5b565070f921)<br/><br/>
+
 
 
 
