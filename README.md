@@ -504,6 +504,31 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 105516](https://github.com/user-attachments/assets/5ce07efe-4f93-4ea8-8bad-7a73586f1160)<br/><br/>
 ![Screenshot 2024-10-12 105527](https://github.com/user-attachments/assets/5f71db23-4694-4328-af61-b6fff78491f3)<br/><br/>
 
+### In case of buffer:
+### in_rise_thr:
+* Typically at 50% of voltage value.<br/><br/>
+![Screenshot 2024-10-12 105725](https://github.com/user-attachments/assets/ce16ab2d-91a6-430e-8302-8af63745c0b1)<br/><br/>
+### in_fall_thr,out_rise_thr,out_fall_thr:
+![Screenshot 2024-10-12 110429](https://github.com/user-attachments/assets/45336360-8158-4b02-bc33-7b4e7e92062e)<br/><br/>
+![Screenshot 2024-10-12 110445](https://github.com/user-attachments/assets/a74228b0-cdf0-451d-846e-335837f97405)<br/><br/>
+![Screenshot 2024-10-12 110453](https://github.com/user-attachments/assets/8ecffbe7-7221-4228-a192-eb427359509d)<br/><br/>
+
+## Propogation Delay:
+* Propogation delay is the time taken by the circuit to generate the output when input was given.
+* Simply output_time - input_time.<br/><br/>
+![Screenshot 2024-10-12 110809](https://github.com/user-attachments/assets/d7976df5-5a52-4a04-a2d6-30c54363feff)<br/><br/>
+**Note** : Delay should not be negative.<br/><br/>
+
+## Transition time:
+* It is time taken for the pin to change its state i.e. transition from low to high or high to low.
+* Typically we find difference between voltage at 10% and 90%.
+* Depends on Slew Rate.<br/><br/>
+![Screenshot 2024-10-12 111254](https://github.com/user-attachments/assets/0b1e1194-caaa-4421-b14b-77665182fb2d)<br/><br/>
+
+
+
+
+
 
 
 
