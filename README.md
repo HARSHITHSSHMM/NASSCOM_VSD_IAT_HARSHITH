@@ -430,7 +430,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * LVT means " Low Voltage Threshold ". These are used in timingcritical paths. These cells consume more power due to leakage.
 * Other type of cells are ' SVT ' (Standard Voltage Threshold).Used for moderate power consumption and delay.Also called as RVT(Regular Voltage Threshold) cells.
 
-### Designing an Inverter:
+## Designing an Inverter:
 ![Screenshot 2024-10-12 100205](https://github.com/user-attachments/assets/037f2bd8-275f-408f-a4b2-2b87e057b63f)<br/><br/>
 * We have to design inverter using PDKs.
 * We have to follow DRC (Design rule Check) and LVS (Layout vs Schematic).
@@ -438,7 +438,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 100518](https://github.com/user-attachments/assets/09ac17f5-1ba8-4a17-9ef4-2f0c235c2db8)<br/><br/>
 * SPICE models are used for parameter equations.<br/><br/>
 ![Screenshot 2024-10-12 100620](https://github.com/user-attachments/assets/fe7e05c9-aa8e-4e63-bbdb-1269f8f9878f)<br/><br/>
-#### User-defined Specifiations:
+### User-defined Specifiations:
 * Cell height and Cell width are user-defined.<br/>
 -> Height must be same for all the cells.<br/>
 -> Width can change to change the delay.<br/>
@@ -456,14 +456,14 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 101531](https://github.com/user-attachments/assets/fbdd6855-3fd0-4962-a4f0-c1c0af8563b3)<br/><br/>
 ![Screenshot 2024-10-12 101601](https://github.com/user-attachments/assets/3f8fde07-46b0-437c-a040-85999c3c637f)<br/><br/>
 
-### Design Steps:
-#### Circuit and Layout Design:
+## Design Steps:
+### Circuit and Layout Design:
 * First we have to implement the funtion.
 * Next, we have to remove redundant terms inside the function.
 * After function was implemented in CMOS or any other technology.
 * Aspect ratio of PMOS and NMOS(if CMOS is being used) are to be designed.<br/><br/>
 ![Screenshot 2024-10-12 102013](https://github.com/user-attachments/assets/b3f89bb2-b8d2-4112-adca-3c2322482e20)<br/><br/>
-#### Characterization:
+### Characterization:
 * Below is the layout of the buffer formed by cascading two inverters(NOT gates).<br/><br/>
 ![Screenshot 2024-10-12 102556](https://github.com/user-attachments/assets/c7162b5d-525f-4d50-a991-f8dfcd9b529d)<br/><br/>
 ![Screenshot 2024-10-12 102705](https://github.com/user-attachments/assets/64faad64-f10c-4b39-a385-fb46ca912528)<br/><br/>
@@ -479,6 +479,35 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 **Step-8**: Provide necessary simulation command.<br/><br/>
 ![Screenshot 2024-10-12 103808](https://github.com/user-attachments/assets/0449a81b-8364-45e2-ad77-ba361fd2fce5)<br/><br/>
 ![Screenshot 2024-10-12 103918](https://github.com/user-attachments/assets/ae88ec05-4550-4abf-98a6-e0cd876980c6)<br/><br/>
+
+* Now, we have to provide all these characterizations to characterization software " GUNA ".
+* GUNA will povide us with Timing,Noise and Power characterizations.<br/><br/>
+![Screenshot 2024-10-12 104156](https://github.com/user-attachments/assets/fe73f8ff-e18f-4f54-a27f-e9e1b29b9fcd)<br/><br/>
+
+## Timing Charcterizations:
+* First, we need to know about "Slew Rate".
+* Slew Rate is defined as ' the rate of change of signal's voltage over time '.
+* Slew Rate = dV/dt (volts/sec).
+* Optimum Slew Rate is " Infinite ".
+* Practicaly, Slew Rate can't be infinite because of environment variables and nature of real-world objects.
+* Below is an image of input and output of an inverter.Red line is input and blue line is output.<br/><br/>
+![Screenshot 2024-10-12 104422](https://github.com/user-attachments/assets/087ef58b-d57e-4ef8-86a1-28d6f0b0d5ea)<br/><br/>
+* We will see the images of each definition below.<br/><br/>
+### slew_low_rise_thr:
+* Typically the value is 20-30 % of voltage.<br/><br/>
+![Screenshot 2024-10-12 105055](https://github.com/user-attachments/assets/5297bff3-18d6-42c0-a976-d59faf28ac0d)<br/><br/>
+### slew_high_rise_thr:
+* Typically the value is 80-90 % of voltage.<br/><br/>
+![Screenshot 2024-10-12 105339](https://github.com/user-attachments/assets/92833caf-8dae-47de-9612-b243186205b5)<br/><br/>
+### slew_high_fall_thr: slew_low_fall_thr:
+* Similar to rise threshold.<br/><br/>
+![Screenshot 2024-10-12 105516](https://github.com/user-attachments/assets/5ce07efe-4f93-4ea8-8bad-7a73586f1160)<br/><br/>
+![Screenshot 2024-10-12 105527](https://github.com/user-attachments/assets/5f71db23-4694-4328-af61-b6fff78491f3)<br/><br/>
+
+
+
+
+
 
 
 
