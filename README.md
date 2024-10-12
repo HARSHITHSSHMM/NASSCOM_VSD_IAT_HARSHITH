@@ -419,6 +419,9 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * We want to reduce " Half perimeter Wire Length (HPWL) " and converge the overflow.
 * This is the result after " run_placement ".<br/><br/>
 ![run_placement (2)](https://github.com/user-attachments/assets/0c6b34a6-75d9-4f6c-bc44-537e3f2c62e4)<br/><br/>
+![placed_zoom](https://github.com/user-attachments/assets/00c4cdbe-e164-4aaa-b23c-09f55dad867d)<br/><br/>
+![placed](https://github.com/user-attachments/assets/3809d0e2-32c6-41a5-85e3-876306abda1e)<br/><br/>
+
 
 ## Cell Design Flow:
 * In this task, we are going to see the flow of cell design.
