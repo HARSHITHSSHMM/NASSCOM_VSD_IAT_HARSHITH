@@ -529,6 +529,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 111254](https://github.com/user-attachments/assets/0b1e1194-caaa-4421-b14b-77665182fb2d)<br/><br/>
 
 
+# Section-3: Design library cell using Magic Layout and ngspice characterization
 
 
 
