@@ -430,6 +430,38 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * LVT means " Low Voltage Threshold ". These are used in timingcritical paths. These cells consume more power due to leakage.
 * Other type of cells are ' SVT ' (Standard Voltage Threshold).Used for moderate power consumption and delay.Also called as RVT(Regular Voltage Threshold) cells.
 
+### Designing an Inverter:
+![Screenshot 2024-10-12 100205](https://github.com/user-attachments/assets/037f2bd8-275f-408f-a4b2-2b87e057b63f)<br/><br/>
+* We have to design inverter using PDKs.
+* We have to follow DRC (Design rule Check) and LVS (Layout vs Schematic).
+* Based on these, we have to use lambda rules.<br/><br/>
+![Screenshot 2024-10-12 100518](https://github.com/user-attachments/assets/09ac17f5-1ba8-4a17-9ef4-2f0c235c2db8)<br/><br/>
+* SPICE models are used for parameter equations.<br/><br/>
+![Screenshot 2024-10-12 100620](https://github.com/user-attachments/assets/fe7e05c9-aa8e-4e63-bbdb-1269f8f9878f)<br/><br/>
+#### User-defined Specifiations:
+* Cell height and Cell width are user-defined.
+-> Height must be same for all the cells.<br/>
+-> Width can change to change the delay.<br/>
+* Suppy voltage is another user-defined parameter.
+-> The designer has to design the library cell such that those are within the noise margin levels.
+* Metal layers.
+-> There are many metal layers and designer have to choose metal layer according to width, type and contacts.
+* Pin locations.
+-> Change the location or direction of pins according to the requirement.
+* Drawn gate length.
+-> To increase or decrease the size of polysilicon gate.<br/><br/>
+  ![Screenshot 2024-10-12 100850](https://github.com/user-attachments/assets/e5c201f8-e329-403d-88c5-3d507a506432)<br/><br/>
+![Screenshot 2024-10-12 101055](https://github.com/user-attachments/assets/5b89468a-41c7-48b8-97bd-0d4f1bbb267e)<br/><br/>
+![Screenshot 2024-10-12 101407](https://github.com/user-attachments/assets/414df5c4-0ed3-48e6-9d30-b62390f06f34)<br/><br/>
+![Screenshot 2024-10-12 101531](https://github.com/user-attachments/assets/fbdd6855-3fd0-4962-a4f0-c1c0af8563b3)<br/><br/>
+![Screenshot 2024-10-12 101601](https://github.com/user-attachments/assets/3f8fde07-46b0-437c-a040-85999c3c637f)<br/><br/>
+
+
+
+ 
+
+
+
 
 
 
