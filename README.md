@@ -413,6 +413,13 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 084739](https://github.com/user-attachments/assets/732ea851-dd5b-49bd-bf59-8f1de54a0413)<br/><br/>
 * Static Timing Analysis is also known as Signoff Timing Analysis.
 
+## Placement using OpenLANE:
+* We know that there are two types of placements. Global and Detailed.
+* Global placement main objective is to reduce the wirelength.
+* We want to reduce " Half perimeter Wire Length (HPWL) " and converge the overflow.
+* This is the resulting after " run_placement ".<br/><br/>
+![run_placement (2)](https://github.com/user-attachments/assets/0c6b34a6-75d9-4f6c-bc44-537e3f2c62e4)<br/><br/>
+
 
 
 
