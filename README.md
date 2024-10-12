@@ -417,8 +417,18 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * We know that there are two types of placements. Global and Detailed.
 * Global placement main objective is to reduce the wirelength.
 * We want to reduce " Half perimeter Wire Length (HPWL) " and converge the overflow.
-* This is the resulting after " run_placement ".<br/><br/>
+* This is the result after " run_placement ".<br/><br/>
 ![run_placement (2)](https://github.com/user-attachments/assets/0c6b34a6-75d9-4f6c-bc44-537e3f2c62e4)<br/><br/>
+
+## Cell Design Flow:
+* In this task, we are going to see the flow of cell design.
+* First, we are going to take a chip and point out the standard cells.<br/><br/>
+![Screenshot 2024-10-12 095104](https://github.com/user-attachments/assets/1aeabfc3-2e71-4cc8-a79a-5ef676ac8ca1)<br/><br/>
+![Screenshot 2024-10-12 095143](https://github.com/user-attachments/assets/657f45b8-8fa0-4489-97da-87ccfa15f731)<br/><br/>
+* From the about image, " vt " means " Voltage Threshold ".
+* HVT means " High Voltage Threshold ". These are used to save power. Only use where timing path is not critical.
+* LVT means " Low Voltage Threshold ". These are used in timingcritical paths. These cells consume more power due to leakage.
+* Other type of cells are ' SVT ' (Standard Voltage Threshold).Used for moderate power consumption and delay.Also called as RVT(Regular Voltage Threshold) cells.
 
 
 
