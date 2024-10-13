@@ -535,7 +535,26 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-13 074853](https://github.com/user-attachments/assets/7de10807-9055-4887-9fa0-36b98174912d)<br/><br/>
 ![Screenshot 2024-10-13 075354](https://github.com/user-attachments/assets/924ae8d0-9e4a-4542-91e0-602b174186d4)<br/><br/>
 * From above picture, all statements between " *** *** " are comments.
-* Syntax is " Transistor_name drain_v gate_v source_v source_v transistor_type width length".
+* Syntax for transistor description is  " Transistor_name drain_v gate_v source_v source_v transistor_type width length".
+* We can observe that with changing the aspect ratios, the curve will change accordingly as shown below.<br/><br/>
+![Screenshot 2024-10-13 080226](https://github.com/user-attachments/assets/9498dfc2-407b-4f4e-8612-778755ebc94d)<br/><br/>
+![Screenshot 2024-10-13 075754](https://github.com/user-attachments/assets/82b72d74-286e-41f4-92b3-9f9349bab74b)<br/><br/>
+* Now, we will see the robustness of a CMOS inverter. It retains the logic but changes the nature of curve according to the parameters.<br/><br/>
+![Screenshot 2024-10-13 080833](https://github.com/user-attachments/assets/4dfc4d66-92c4-4cee-8b61-4232fe349ac5)<br/><br/>
+* At switching threshold point, both NMOS and PMOS will be ON i.e in saturation region.<br/><br/>
+![Screenshot 2024-10-13 080941](https://github.com/user-attachments/assets/61c3a635-0f1e-4ba8-b097-10d797746bda)<br/><br/>
+* Calculation of vm:<br/><br/>
+![Screenshot 2024-10-13 083055](https://github.com/user-attachments/assets/dc44473b-56e9-49ba-84d2-cd94ffae5890)<br/><br/>
+* Now, we are gooing to experiment on different aspect ratios.
+### Step-1:
+* Retrieve the required files from github.
+> git clone https://github.com/nickson-jose/vsdstdcelldesign.git<br/>
+### Step-2:
+* Copy sky130A techfile from magic to vsdstdcelldesign.
+### Step-3:
+* Give the following command.
+> magic -T sky130A.tech sky130_inv.mag &
+
 
 
 
