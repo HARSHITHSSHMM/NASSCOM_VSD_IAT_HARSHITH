@@ -554,6 +554,34 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ### Step-3:
 * Give the following command.
 > magic -T sky130A.tech sky130_inv.mag &
+## CMOS Process:
+![Screenshot 2024-10-13 091424](https://github.com/user-attachments/assets/ca73ad19-70df-4015-9efa-d9f931e94382)<br/><br/>
+![Screenshot 2024-10-13 091443](https://github.com/user-attachments/assets/16237a05-f392-4bea-b379-1708c9161062)<br/><br/>
+* Now, we are going to see how to process a CMOS.
+### Steps:
+* First, p-substrate will be taken(silicon wafer).
+* A photoresist layer will be deposited.
+* Now we have to protect one side with a mask.<br/><br/>
+![Screenshot 2024-10-13 094019](https://github.com/user-attachments/assets/761a5434-e9d1-4ac7-b0de-7f7199423d89)<br/><br/>
+![Screenshot 2024-10-13 094030](https://github.com/user-attachments/assets/02ce64ad-55ff-4fa6-9ea9-ce13fd745095)<br/><br/>
+* Now, incident UV rays.Photoresist reacts to UV rays.(positive photoresist)
+* Remove photoresist which was exposed .Etch the surrface.
+* Remove the mask and implant Boron through ion implantation from high energy source.It creates a p-well.
+* Same process for n-well too.Phosporous is used for n-well.(from high energy source).
+* To diffuse the wells to half the substrate area, we have to put the wafers in the high temperature furnace.
+* Now, to control the threshold of PMOS and NMOS, we are going to dope Boron to p-well and arsenic to n-well at low energy.<br/><br/>
+![Screenshot 2024-10-13 095003](https://github.com/user-attachments/assets/bde71a1f-a2d5-4eed-9c7d-4fb59a8c5fe9)<br/><br/>
+* Now, etch the original oxide using dilute Hydrogen flouride(HF) and regrow into high quality.
+* Deposit polysilicon layer on top of the oxide.
+* Now , implant arsenic or phosporous for low gate resistance.
+* Now,put on the mask-6 as shown.<br/><br/>
+![Screenshot 2024-10-13 095244](https://github.com/user-attachments/assets/7fed78bf-9e02-40a4-b450-6870fc818a75)<br/><br/>
+![Screenshot 2024-10-13 095258](https://github.com/user-attachments/assets/9be020c2-0084-4b5e-8f43-0aa505aad490)<br/><br/>
+* Now, incident UV rays and etch away polysilicon.Now,it looks like below image.<br/><br/>
+![Screenshot 2024-10-13 095504](https://github.com/user-attachments/assets/320af9e3-58c5-479a-8ee8-19eef24f57e8)<br/><br/>
+
+
+
 
 
 
