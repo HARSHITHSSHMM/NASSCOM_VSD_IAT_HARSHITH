@@ -621,6 +621,12 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ## Layout of inverter:
 * To select a layer, press 's' and to select whole connections press 's' 2 times.
 ![inv_layout](https://github.com/user-attachments/assets/0ea41174-2730-4eb6-9b56-f2a9c83620ed)<br/>
+* We are going to see the SPICE code for the circuit.For that, we have to use " ext2spice " command. <br/><br/>
+![ext2spice](https://github.com/user-attachments/assets/6b40fbed-62e1-4e84-8fb7-aee276fba911)<br/><br/>
+* Now, we are going to use our libraries.To edit press 'I'.
+* Syntax for voltages is " Name Voltage_node_name node voltage_level ".
+* For pulse signals " Name node_name Gnd PULSE(start_volt High_volt Start_time rise_time fall_time On_time Time_period). <br/><br/>
+
 
 
 
