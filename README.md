@@ -502,7 +502,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ### slew_high_rise_thr:
 * Typically the value is 80-90 % of voltage.<br/><br/>
 ![Screenshot 2024-10-12 105339](https://github.com/user-attachments/assets/92833caf-8dae-47de-9612-b243186205b5)<br/><br/>
-### slew_high_fall_thr: slew_low_fall_thr:
+### slew_high_fall_thr and slew_low_fall_thr:
 * Similar to rise threshold.<br/><br/>
 ![Screenshot 2024-10-12 105516](https://github.com/user-attachments/assets/5ce07efe-4f93-4ea8-8bad-7a73586f1160)<br/><br/>
 ![Screenshot 2024-10-12 105527](https://github.com/user-attachments/assets/5f71db23-4694-4328-af61-b6fff78491f3)<br/><br/>
@@ -530,6 +530,13 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 
 
 # Section-3: Design library cell using Magic Layout and ngspice characterization
+### VTC(Voltage Transfer Characteristics):
+* we need to do following step as in the image.<br/><br/>
+![Screenshot 2024-10-13 074853](https://github.com/user-attachments/assets/7de10807-9055-4887-9fa0-36b98174912d)<br/><br/>
+![Screenshot 2024-10-13 075354](https://github.com/user-attachments/assets/924ae8d0-9e4a-4542-91e0-602b174186d4)<br/><br/>
+* From above picture, all statements between " *** *** " are comments.
+* Syntax is " Transistor_name drain_v gate_v source_v source_v transistor_type width length".
+
 
 
 
