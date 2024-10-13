@@ -626,11 +626,15 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * Now, we are going to use our libraries.To edit press 'I'.
 * Syntax for voltages is " Name Voltage_node_name node voltage_level ".
 * For pulse signals " Name node_name Gnd PULSE(start_volt High_volt Start_time rise_time fall_time On_time Time_period). <br/><br/>
-
-
-
-
-
+![cell_rise_delay](https://github.com/user-attachments/assets/fa6b2dc4-d122-4c3e-b3ef-2bc73908c401)<br/><br/>
+![cell_fall-delay](https://github.com/user-attachments/assets/fe668aa4-3ff9-4439-b5ee-900b35901737)<br/><br/>
+![perc50](https://github.com/user-attachments/assets/0a1aaabc-d208-475f-a2bb-f04d1a64ff1a)<br/><br/>
+![ftd](https://github.com/user-attachments/assets/d0a1f5ae-4c68-4d8f-a53f-35da8b59adc6)<br/><br/>
+![my_inv](https://github.com/user-attachments/assets/f7125c98-74ec-4143-a93c-d86d894754f1)<br/><br/>
+* Rise time dealy (80% - 20%) = 4.08e-9 - 4.02e-9 = 60 ps.
+* Fall time delay (20% - 80%) = 2.18e-9 - 2.12e-9 = 0.02e-9 = 20 ps.
+* Cell rise delay = 4.05326e-9 - 4.05e-9 = 2.26 ps. 
+* Cell fall delay (i/p - o/p (50%)) = 2.18656e-9 - 2.15e-9 = 36.56 ps.
 
 
 
