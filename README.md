@@ -618,6 +618,9 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-13 125227](https://github.com/user-attachments/assets/90cc2534-6f43-4cb0-ae90-a791d3004ebd)<br/><br/>
 ![Screenshot 2024-10-13 125313](https://github.com/user-attachments/assets/f06d1df6-f51b-4c1e-8a84-0f4252273043)<br/><br/>
 
+## Layout of inverter:
+* To select a layer, press 's' and to select whole connections press 's' 2 times.
+![inv_layout](https://github.com/user-attachments/assets/0ea41174-2730-4eb6-9b56-f2a9c83620ed)<br/>
 
 
 
