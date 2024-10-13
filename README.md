@@ -3,8 +3,8 @@
 ### Packaging:
 Below is an image of an arduino board.<br/><br/>
 ![Screenshot 2024-10-10 122614](https://github.com/user-attachments/assets/44a378ae-8bf8-4f1a-8bb8-937bbf2bb149)<br/><br/>
-* We can see a chip was marked in yellow circle.Its block diagram i![Screenshot 2024-10-11 172214](https://github.com/user-attachments/assets/f120bdfa-0dc6-479a-8b43-42bdb00b54bc)
-s as shown below.<br/><br/>
+* We can see a chip was marked in yellow circle.Its block diagram is as shown below.<br/><br/>
+![Screenshot 2024-10-11 172214](https://github.com/user-attachments/assets/f120bdfa-0dc6-479a-8b43-42bdb00b54bc)<br/><br/>
 
 ![Screenshot 2024-10-10 122229](https://github.com/user-attachments/assets/fb50b3b5-ecc1-4e72-9815-4954224816d5)<br/><br/>
 
@@ -588,11 +588,51 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * If energy barrier crossed 3.2eV, the charge carriers will penetrate the oxide layer.
 ### Short Channel Effect:
 * When channel length decreases Gate voltage can't control charge flow in channel and leakage current will be formed.
-
+### Source and Drain formation:
 * Now, do the same process to form gate and source terminals.Deposit SiO2 or Si3n4 layer and do plasma anisotropic etching and it wil leave side-wall spacers. <br/><br/>
 ![Screenshot 2024-10-13 120910](https://github.com/user-attachments/assets/176987bb-17f5-4994-b5d3-d9d9412e30a9)<br/><br/>
-* Now, deposit thin layer of screen oxide.
-* 
+* Now, deposit thin layer of screen oxide to avoid channeling during implants.
+* Again mask and implant and put the wafer in high temperature furnace to form source and drain<br/><br/>
+![Screenshot 2024-10-13 122357](https://github.com/user-attachments/assets/d52e7f52-8a44-430e-9538-2560f05600c7)<br/><br/>
+### Forming inteconnects and contacts:
+* First, remove thin oxide using HF.
+* Deposit Titanium on surface using " sputtering ".<br/><br/>
+![Screenshot 2024-10-13 122631](https://github.com/user-attachments/assets/42b21d4a-b55c-4e45-b200-d0f692f2b32e)<br/><br/>
+* Heat wafer with N2 at high temperature to get TiSi2 (low resistent) <br/><br/>
+![Screenshot 2024-10-13 122819](https://github.com/user-attachments/assets/abfaca49-9274-44e7-a0f9-05f7015c29d6)<br/><br/>
+* TiN also gets formed in the process.<br/><br/>
+![Screenshot 2024-10-13 122906](https://github.com/user-attachments/assets/a7560ba1-f070-4ab8-9034-e069978cfca7)<br/><br/>
+* Next, mask and etch TiN using RCA cleaning.<br/><br/>
+![Screenshot 2024-10-13 123255](https://github.com/user-attachments/assets/b2c3b1fe-fe24-4ad8-8a91-e49fc46a826a)<br/><br/>
+![Screenshot 2024-10-13 124445](https://github.com/user-attachments/assets/91dfee02-5cb4-4ebb-b50d-9e8210094981)<br/><br/>
+### Higher level metal formation:
+![Screenshot 2024-10-13 124610](https://github.com/user-attachments/assets/0412993b-00a9-417f-b3a9-43f9309793c9)<br/><br/>
+![Screenshot 2024-10-13 124650](https://github.com/user-attachments/assets/0c993e1f-37bb-4b58-a429-460bafb9b486)<br/><br/>
+![Screenshot 2024-10-13 124740](https://github.com/user-attachments/assets/e0289a3d-444f-4d5f-870f-4a5030377205)<br/><br/>
+![Screenshot 2024-10-13 124815](https://github.com/user-attachments/assets/f22949a3-3bd4-4e23-b47e-3ab747a30062)<br/><br/>
+![Screenshot 2024-10-13 124845](https://github.com/user-attachments/assets/bec5454f-6581-417a-bdef-2b2bf4176c28)<br/><br/>
+![Screenshot 2024-10-13 125002](https://github.com/user-attachments/assets/aab6e085-0360-4e68-82dd-314f28279d44)<br/><br/>
+![Screenshot 2024-10-13 125022](https://github.com/user-attachments/assets/ebebeec1-320d-4f70-b6ef-aa7806530342)<br/><br/>
+![Screenshot 2024-10-13 125050](https://github.com/user-attachments/assets/dbf1963a-5b93-4e6e-8485-273aac680e7f)<br/><br/>
+![Screenshot 2024-10-13 125121](https://github.com/user-attachments/assets/4d5a8016-0e92-445a-a2a9-33a2d7cf56db)<br/><br/>
+![Screenshot 2024-10-13 125227](https://github.com/user-attachments/assets/90cc2534-6f43-4cb0-ae90-a791d3004ebd)<br/><br/>
+![Screenshot 2024-10-13 125313](https://github.com/user-attachments/assets/f06d1df6-f51b-4c1e-8a84-0f4252273043)<br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
