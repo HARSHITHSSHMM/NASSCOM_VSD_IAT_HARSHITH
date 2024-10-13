@@ -591,7 +591,8 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 
 * Now, do the same process to form gate and source terminals.Deposit SiO2 or Si3n4 layer and do plasma anisotropic etching and it wil leave side-wall spacers. <br/><br/>
 ![Screenshot 2024-10-13 120910](https://github.com/user-attachments/assets/176987bb-17f5-4994-b5d3-d9d9412e30a9)<br/><br/>
-
+* Now, deposit thin layer of screen oxide.
+* 
 
 
 
