@@ -579,6 +579,21 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-13 095258](https://github.com/user-attachments/assets/9be020c2-0084-4b5e-8f43-0aa505aad490)<br/><br/>
 * Now, incident UV rays and etch away polysilicon.Now,it looks like below image.<br/><br/>
 ![Screenshot 2024-10-13 095504](https://github.com/user-attachments/assets/320af9e3-58c5-479a-8ee8-19eef24f57e8)<br/><br/>
+* We are now going to form Lightly Doped Drain(LDD).<br/><br/>
+![Screenshot 2024-10-13 115530](https://github.com/user-attachments/assets/cebd8974-891e-42d3-acd7-8b5541ac2e4d)<br/><br/>
+* P- and N- are used in LDDs. We require LDDs because of two reasons. => " Hot Electron Effect " and " Short Channel Effect ".
+### Hot Electron Effect:
+* It is caused when the size getting decreased but no change in Voltage levels which caused Electric Field(E=V/d) grow more strength.<br/><br/>
+![Screenshot 2024-10-13 120007](https://github.com/user-attachments/assets/fa342e92-c88b-402b-8ccd-9f60f4c0f623)<br/><br/>
+* If energy barrier crossed 3.2eV, the charge carriers will penetrate the oxide layer.
+### Short Channel Effect:
+* When channel length decreases Gate voltage can't control charge flow in channel and leakage current will be formed.
+
+* Now, do the same process to form gate and source terminals.Deposit SiO2 or Si3n4 layer and do plasma anisotropic etching and it wil leave side-wall spacers. <br/><br/>
+![Screenshot 2024-10-13 120910](https://github.com/user-attachments/assets/176987bb-17f5-4994-b5d3-d9d9412e30a9)<br/><br/>
+
+
+
 
 
 
