@@ -637,7 +637,11 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * Cell rise delay = 4.05326e-9 - 4.05e-9 = 2.26 ps. 
 * Cell fall delay (i/p - o/p (50%)) = 2.18656e-9 - 2.15e-9 = 36.56 ps.
 
-
+### Rectifying problems in DRC section:
+* Below is the link for "read the docs".<br/>
+[https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html](url)<br/>
+* Below is the link for ' opencircuit design".<br/>
+[http://opencircuitdesign.com/magic/](url)<br/>
 
 
 
