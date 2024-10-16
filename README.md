@@ -716,6 +716,50 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![copied_libs](https://github.com/user-attachments/assets/0c1b1b9a-aaf3-42a2-a35d-c9eeaeb9195f)<br/><br/>
 
 
+**Now, we are going to edit config.tcl file**
+![changed_config](https://github.com/user-attachments/assets/219daf9f-4139-4602-918c-496718bb1d18)<br/><br/>
+* Edit the congig file as shown in the above image.
+* Now, run the openlane flow. (Come back to openlane directory).<br/><br/>
+![config_open](https://github.com/user-attachments/assets/8c57ea90-ddb0-4260-8b11-2ae7d8e1a2b1)<br/><br/>
+* Now, run the following commands in openlane.
+> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+> add_lefs -src $lefs<br/><br/>
+![set_lefs](https://github.com/user-attachments/assets/fcb4d19b-7364-4073-af38-836c9d0b0f64)<br/><br/>
+* Now, run the synthesis using "run_synthesis" command.<br/><br/>
+![synth_lef](https://github.com/user-attachments/assets/002baa56-b4b0-4d65-83ff-bdc5ad8e89c0)<br/><br/>
+* Now, we are going to observe " cell area " and " negative slack "<br/><br/>
+![neg_slack](https://github.com/user-attachments/assets/cd7da103-0188-49c9-b971-279520f229d3)<br/><br/>
+![chip_area](https://github.com/user-attachments/assets/f6ef807b-2270-4202-aa19-aa7335b88090)<br/><br/>
+* We can observe  that total negative slack and worst negative slack and chip area very high.
+* Our objective is to reduce the negative slack and chip area.
+* Run the following commands in openlane.
+* To update the variables => 
+> prep -design picorv32a -tag 24-03_10-03 -overwrite<br/>
+* To include newly added lef to openlane flow merged.lef
+> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+> add_lefs -src $lefs<br/>
+* To display current value of variable SYNTH_STRATEGY
+> echo $::env(SYNTH_STRATEGY)<br/>
+* To set new value for SYNTH_STRATEGY
+> set ::env(SYNTH_STRATEGY) "DELAY 3"<br/>
+* To display current value of variable SYNTH_BUFFERING to check whether it's enabled
+> echo $::env(SYNTH_BUFFERING)<br/>
+* To display current value of variable SYNTH_SIZING
+> echo $::env(SYNTH_SIZING)<br/>
+* To set new value for SYNTH_SIZING
+> set ::env(SYNTH_SIZING) 1<br/>
+* To display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+> echo $::env(SYNTH_DRIVING_CELL)<br/>
+* Now, run the synthesis again.
+> run_synthesis<br/>
+
+
+
+
+
+
+
+
 
 
 
