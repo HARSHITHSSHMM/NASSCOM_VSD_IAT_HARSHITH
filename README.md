@@ -689,7 +689,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
  * Below is the components of inverter layout.<br/><br/>
  ![Screenshot 2024-10-16 111648](https://github.com/user-attachments/assets/9b450977-934d-4c9e-9432-dc3a0c849b38)<br/><br/>
  * Now, we are going to define a port from a label using magic tool.
- * First, select a label. We are ging to select 'A'.<br/><br/>
+ * First, select a label. We are going to select 'A'.<br/><br/>
  ![open_A](https://github.com/user-attachments/assets/574517ae-3246-4c56-bb9b-c65e9418c890)<br/><br/>
 * Next go to Edit>>Text. It will show a dialog box. Enter the details as shown=><br/><br/>
 ![locali](https://github.com/user-attachments/assets/35a741ae-7b2a-406e-895d-ed88ae4d1d89)<br/><br/>
@@ -716,7 +716,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![copied_libs](https://github.com/user-attachments/assets/0c1b1b9a-aaf3-42a2-a35d-c9eeaeb9195f)<br/><br/>
 
 
-**Now, we are going to edit config.tcl file**
+**Now, we are going to edit config.tcl file** <br/>
 ![changed_config](https://github.com/user-attachments/assets/219daf9f-4139-4602-918c-496718bb1d18)<br/><br/>
 * Edit the congig file as shown in the above image.
 * Now, run the openlane flow. (Come back to openlane directory).<br/><br/>
@@ -730,8 +730,8 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * Now, we are going to observe " cell area " and " negative slack "<br/><br/>
 ![neg_slack](https://github.com/user-attachments/assets/cd7da103-0188-49c9-b971-279520f229d3)<br/><br/>
 ![chip_area](https://github.com/user-attachments/assets/f6ef807b-2270-4202-aa19-aa7335b88090)<br/><br/>
-* We can observe  that total negative slack and worst negative slack and chip area very high.
-* Our objective is to reduce the negative slack and chip area.
+* We can observe that total negative slack and worst negative slack are very high.
+* Our objective is to reduce the negative slack.
 * Run the following commands in openlane.
 * To update the variables => 
 > prep -design picorv32a -tag 24-03_10-03 -overwrite<br/>
@@ -751,7 +751,39 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 * To display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
 > echo $::env(SYNTH_DRIVING_CELL)<br/>
 * Now, run the synthesis again.
-> run_synthesis<br/>
+> run_synthesis<br/><br/>
+![overwrite_prep](https://github.com/user-attachments/assets/5e18f74b-adf1-4fe0-b335-6bacae67ed7e)<br/><br/>
+![echoes](https://github.com/user-attachments/assets/86e1baf6-07b3-476c-a3dc-438038d651a2)<br/><br/>
+* We can obseve 0 negative slack.<br/><br/>
+![area_inc](https://github.com/user-attachments/assets/28356239-88ff-48eb-b4d1-1287a696a9c4)<br/><br/>
+![ns_0](https://github.com/user-attachments/assets/3fac50fc-8406-45b7-9b78-cea88e2ea326)<br/><br/>
+* Now, we are going to run the 'floorplan'
+> run_floorplan<br/><br/>
+![error-floor](https://github.com/user-attachments/assets/4dbd56cd-c96e-4b3a-948a-28d11bb3c2bd)<br/><br/>
+* But we see an error and flow failed.
+* So, add these three commands.=>
+> init_floorplan
+> place_io
+> tap_decap_or<br/>
+* Now, run the placement.<br/><br/>
+![place_io](https://github.com/user-attachments/assets/b3ac5eeb-4b30-4a7d-8f54-1ff319b48ba2)<br/><br/>
+![tap_decap](https://github.com/user-attachments/assets/39467bc1-ca08-43c4-8f8b-b39aa77ee8a3)<br/><br/>
+![placed_io](https://github.com/user-attachments/assets/3e80a6e8-80aa-4af4-8091-5cae865d0c10)<br/><br/>
+**Now, we have to load placement def in magic.** <br/>
+* For that, we have tochange the location to placement directory.
+> cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+* Now, place the placement def in magic tool.
+> magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &<br/><br/>
+![layout_vsdinv](https://github.com/user-attachments/assets/6426f6e8-5b2c-4632-bfba-2dc68738c8aa)<br/><br/>
+
+
+
+
+
+
+
+
+
 
 
 
