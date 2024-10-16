@@ -529,7 +529,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![Screenshot 2024-10-12 111254](https://github.com/user-attachments/assets/0b1e1194-caaa-4421-b14b-77665182fb2d)<br/><br/>
 
 
-# Section-3: Design library cell using Magic Layout and ngspice characterization
+# Section - 3: Design library cell using Magic Layout and ngspice characterization
 ### VTC(Voltage Transfer Characteristics):
 * we need to do following step as in the image.<br/><br/>
 ![Screenshot 2024-10-13 074853](https://github.com/user-attachments/assets/7de10807-9055-4887-9fa0-36b98174912d)<br/><br/>
@@ -673,7 +673,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![drc_why](https://github.com/user-attachments/assets/08206579-67f8-45ea-8482-0c84ca49ac70)<br/><br/>
 
 
-# Section-4 : Pre-layout timing analysis and importance of good clock tree
+# Section - 4 : Pre-layout timing analysis and importance of good clock tree
  * Open the inverter as shown below.<br/><br/>
  ![magic_T_inv](https://github.com/user-attachments/assets/cd19e96d-57e0-483b-8e6c-9019c371841e)<br/><br/>
  * Now, open tracks.info as shown below.<br/><br/>
@@ -771,7 +771,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![placed_io](https://github.com/user-attachments/assets/3e80a6e8-80aa-4af4-8091-5cae865d0c10)<br/><br/>
 **Now, we have to load placement def in magic.** <br/>
 * For that, we have to change the location to placement directory.
-> cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+> cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/"date"/results/placement/ (dateiin runs)
 
 * Now, place the placement def in magic tool.
 > magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &<br/><br/>
@@ -799,7 +799,7 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 
 
 
-# Final steps for RTL2GDS using tritonRoute and openSTA:
+# Section - 5: Final steps for RTL2GDS using tritonRoute and openSTA
 ### Power Distribution Network(PDN):
 * Below are the commands.
 > cd Desktop/work/tools/openlane_working_dir/openlane
@@ -832,6 +832,61 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![pdn_folder](https://github.com/user-attachments/assets/71e912c5-4a96-4814-b026-73ec88959c9a)<br/><br/>
 ![gen_pdn](https://github.com/user-attachments/assets/eeaa78bd-84c0-4445-aa28-df658f11aa0e)<br/><br/>
 ### Detailed Routing using TritonRoute:
+* To do routing, use the following commands.
+> echo $::env(CURRENT_DEF)
+> echo $::env(ROUTING_STRATEGY)
+> run_routing<br/>
+* This performs many iteratiions for optimized routing.<br/><br/>
+![routing](https://github.com/user-attachments/assets/6afd83f0-c042-4307-8e49-107c90990c69)<br/><br/>
+![complete_route](https://github.com/user-attachments/assets/7d27407f-d8dc-44a3-bbe9-d07fe3a18fc7)<br/><br/>
+* Now, we have to heck in the layout.
+> cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/"date"/results/routing/ (date in runs)
+> magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &<br/><br/>
+![routing_place](https://github.com/user-attachments/assets/5d250fc4-9d07-4872-b7f8-a7f5e22d61c0)<br/><br/>
+![routed](https://github.com/user-attachments/assets/16995091-f945-465a-8046-84a8d5fd5c86)<br/><br/>
+![zoom_routed](https://github.com/user-attachments/assets/29f71496-da6c-4a82-85eb-8969a408e78f)<br/><br/>
+![routed_zom2](https://github.com/user-attachments/assets/1b8aed94-61bd-4e92-9d21-769a99ac558a)<br/><br/>
+###  Post-Route parasitic extraction using SPEF extractor:
+* Change directory
+> cd Desktop/work/tools/SPEF_EXTRACTOR
+
+* Command extract spef
+> python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+
+### OpenSTA timing analysis with the extracted parasitics of the route:
+* Type below commands in OpenLANE.
+> openroad
+> read_lef /openLANE_flow/designs/picorv32a/runs/"date"/tmp/merged.lef
+> read_def /openLANE_flow/designs/picorv32a/runs/"date"/results/routing/picorv32a.def
+> write_db pico_route.db
+* Loading the created database in OpenROAD
+>read_db pico_route.db
+* Read netlist post CTS
+> read_verilog /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/synthesis/picorv32a.synthesis_preroute.v
+
+* Read library for design
+> read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+* Link design and library
+> link_design picorv32a
+
+* Read in the custom sdc we created
+> read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+* Setting all cloks as propagated clocks
+> set_propagated_clock [all_clocks]
+
+* Read SPEF
+> read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef
+
+* Generating custom timing report
+> report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+* Exit to OpenLANE flow
+> exit
+
+
+
 
 
 
