@@ -640,8 +640,37 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ### Rectifying problems in DRC section:
 * Below is the link for "read the docs".<br/>
 [https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html](url)<br/>
-* Below is the link for ' opencircuit design".<br/>
+* Below is the link for "opencircuit design".<br/>
 [http://opencircuitdesign.com/magic/](url)<br/>
+* Below is the link for "Google skywater-pdk".<br/>
+[https://github.com/google/skywater-pdk](url)<br/>
+* Now, we are going to download corrupted  skywater process magic tech files and work on them to rectify DRC errors.
+* For that,we have to download some files.
+* Follow the below steps.
+* Go to home directory
+> cd<br/>
+* Download the files.
+> wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz<br/>
+* Extract the files
+> tar xfz drc_tests.tgz<br/>
+* Change directory into the lab folder
+> cd drc_tests<br/>
+* List all files
+> ls -al<br/>
+* view .magicrc file
+> gvim .magicrc
+* open magic tool in better graphics
+> magic -d XR &<br/>
+* Below is the screenshot.<br/><br/>
+![run_cd](https://github.com/user-attachments/assets/f954b336-725d-4b47-9f3c-a818c140edaf)<br/><br/>
+* Now, we are going to open " poly.mag " in " magic tool " or run command -> " load poly " in tkcon window.
+* Now, we are going to load a tech file. in tkcon window, type
+> tech load sky130A.tech<br/>
+* To check DRC errors, we have to rerun DRC.
+> drc check<br/>
+* To check what error we got by "selecting" the incorrect cell.
+> drc why<br/><br/>
+![drc_why](https://github.com/user-attachments/assets/08206579-67f8-45ea-8482-0c84ca49ac70)<br/><br/>
 
 
 
