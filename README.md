@@ -781,6 +781,23 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![vsdinv_cell](https://github.com/user-attachments/assets/d66a313d-d519-4a3c-9fda-1422ac2358f1)<br/><br/>
 ![expanded](https://github.com/user-attachments/assets/784331e6-0907-441a-943a-b984a08024d9)<br/><br/>
 
+### Timing analysis with OpenSTA:
+* Open the openlane directory.
+* And run the openlane upto 'run_synthesis' using below commands.
+> cd Desktop/work/tools/openlane_working_dir/openlane
+> docker
+> ./flow.tcl -interactive
+> package require openlane 0.9
+> prep -design picorv32a
+> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+> add_lefs -src $lefs
+> set ::env(SYNTH_SIZING) 1
+> run_synthesis<br/>
+
+* We are going to introduce negative slack again.<br/><br/>
+![intro_slack](https://github.com/user-attachments/assets/499fb6cb-cb76-4201-a623-326192166452)<br/><br/>
+
+
 
 
 
