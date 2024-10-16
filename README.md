@@ -673,6 +673,25 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![drc_why](https://github.com/user-attachments/assets/08206579-67f8-45ea-8482-0c84ca49ac70)<br/><br/>
 
 
+# Section-4 : Pre-layout timing analysis and importance of good clock tree
+ * Open the inverter as shown below.<br/><br/>
+ ![magic_T_inv](https://github.com/user-attachments/assets/cd19e96d-57e0-483b-8e6c-9019c371841e)<br/><br/>
+ * Now, open tracks.info as shown below.<br/><br/>
+![open_tracks](https://github.com/user-attachments/assets/cb1a8423-56d5-4bbd-98c9-c94da9c61f02)<br/><br/>
+ ![tracks](https://github.com/user-attachments/assets/155f49e4-3464-4622-9762-659d16d8356d)<br/><br/>
+ * Tracks are used in routing stage.
+ * Now, we can see li1 X,Y co-ordinates.
+ * To check the grid positions of the inverter, follow below steps in the image.<br/><br/>
+ ![make_grid](https://github.com/user-attachments/assets/dbbe9e1e-2fc5-4fbd-b9f1-6d680d0faccf)<br/><br/>
+ * From the image, we can see that there are gridlines formed.
+ * Here the origin of => X = 0.23um and Y = 0.17um
+ * They extend upto => X = 0.46 um and Y = 0.34 um
+ * Below is the components of inverter layout.<br/><br/>
+ ![Screenshot 2024-10-16 111648](https://github.com/user-attachments/assets/9b450977-934d-4c9e-9432-dc3a0c849b38)<br/><br/>
+ 
+
+
+
 
 
 
