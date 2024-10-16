@@ -688,7 +688,35 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
  * They extend upto => X = 0.46 um and Y = 0.34 um
  * Below is the components of inverter layout.<br/><br/>
  ![Screenshot 2024-10-16 111648](https://github.com/user-attachments/assets/9b450977-934d-4c9e-9432-dc3a0c849b38)<br/><br/>
- 
+ * Now, we are going to define a port from a label using magic tool.
+ * First, select a label. We are ging to select 'A'.<br/><br/>
+ ![open_A](https://github.com/user-attachments/assets/574517ae-3246-4c56-bb9b-c65e9418c890)<br/><br/>
+* Next go to Edit>>Text. It will show a dialog box. Enter the details as shown=><br/><br/>
+![locali](https://github.com/user-attachments/assets/35a741ae-7b2a-406e-895d-ed88ae4d1d89)<br/><br/>
+* Now, save it using tkcon => " save sky130_vsdinv.mag"
+* Close the current inverter and open new one using terminal.
+> magic -T sky130A.tech sky130_vsdinv.mag & <br/><br/>
+![vsdinv](https://github.com/user-attachments/assets/74fded8f-df96-4e65-9a4a-9f035275dc2f)<br/><br/>
+### Creating a LEF file:
+* LEF : Library Exchange Format.
+* LEF files are human readable
+* There are two types of LEF files.Those are =><br/>
+1) Technology LEF : Information on available Metal Layers, Via information, Design Rules.
+2) Cell LEF : Information related to geometry of each cells in abstract view.<br/>
+* Now, we are going to see lef files for sky_vsdinv.mag
+* Type " lef write " on tkcon<br/><br/>
+![lef_write](https://github.com/user-attachments/assets/f2d8f322-6956-4d69-9a65-e450e5ba83dc)<br/><br/>
+* To check the newly created lef file, type " gvim sky130_vsdinv.lef " on ' terminal '.<br/><br/>
+![lef_file](https://github.com/user-attachments/assets/b1b6ee4a-d64b-44a1-8ead-e8bd840cc382)<br/><br/>
+* Now, copy the lef file to picorv32/src folder.<br/><br/>
+![copy-lef](https://github.com/user-attachments/assets/76df8aab-7823-427b-b980-2b342b8ca69d)<br/><br/>
+![copied_lef](https://github.com/user-attachments/assets/a7699858-ab6c-41c1-aad7-2db803f499af)<br/><br/>
+* Now, copy associated library files into the same folder.<br/><br/>
+![copy_libs](https://github.com/user-attachments/assets/b26a99c2-b9c3-40ae-8503-bb2e77551785)<br/><br/>
+![copied_libs](https://github.com/user-attachments/assets/0c1b1b9a-aaf3-42a2-a35d-c9eeaeb9195f)<br/><br/>
+
+
+
 
 
 
