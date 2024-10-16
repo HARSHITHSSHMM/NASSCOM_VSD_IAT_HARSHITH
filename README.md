@@ -770,11 +770,16 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 ![tap_decap](https://github.com/user-attachments/assets/39467bc1-ca08-43c4-8f8b-b39aa77ee8a3)<br/><br/>
 ![placed_io](https://github.com/user-attachments/assets/3e80a6e8-80aa-4af4-8091-5cae865d0c10)<br/><br/>
 **Now, we have to load placement def in magic.** <br/>
-* For that, we have tochange the location to placement directory.
+* For that, we have to change the location to placement directory.
 > cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+
 * Now, place the placement def in magic tool.
 > magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &<br/><br/>
+
 ![layout_vsdinv](https://github.com/user-attachments/assets/6426f6e8-5b2c-4632-bfba-2dc68738c8aa)<br/><br/>
+* Search for ' vsdinv ' in the layout, select it and type 'expand' in tkcon.<br/><br/>
+![vsdinv_cell](https://github.com/user-attachments/assets/d66a313d-d519-4a3c-9fda-1422ac2358f1)<br/><br/>
+![expanded](https://github.com/user-attachments/assets/784331e6-0907-441a-943a-b984a08024d9)<br/><br/>
 
 
 
