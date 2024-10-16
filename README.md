@@ -799,7 +799,39 @@ Flop Ratio = No. of D-Flip Flops/Total no. of cells <br/>
 
 
 
-
+# Final steps for RTL2GDS using tritonRoute and openSTA:
+### Power Distribution Network(PDN):
+* Below are the commands.
+> cd Desktop/work/tools/openlane_working_dir/openlane
+> docker
+> ./flow.tcl -interactive
+> package require openlane 0.9
+> prep -design picorv32a
+* To include newly added lef to openlane flow merged.lef
+> set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+> add_lefs -src $lefs
+* To set new value for SYNTH_STRATEGY
+> set ::env(SYNTH_STRATEGY) "DELAY 3"
+* To set new value for SYNTH_SIZING
+> set ::env(SYNTH_SIZING) 1
+* To run synthesis.
+> run_synthesis
+* Following commands are alltogather sourced in "run_floorplan" command
+> init_floorplan
+> place_io
+> tap_decap_or
+* To run placement
+> run_placement
+* " If we are getting error "
+> unset ::env(LIB_CTS)
+* To run CTS
+> run_cts
+* Do power distribution network
+> gen_pdn <br/><br/>
+![pdn_16](https://github.com/user-attachments/assets/4d6bf76c-5d23-44d3-b18b-cf9e1a22f6d7)<br/><br/>
+![pdn_folder](https://github.com/user-attachments/assets/71e912c5-4a96-4814-b026-73ec88959c9a)<br/><br/>
+![gen_pdn](https://github.com/user-attachments/assets/eeaa78bd-84c0-4445-aa28-df658f11aa0e)<br/><br/>
+### Detailed Routing using TritonRoute:
 
 
 
